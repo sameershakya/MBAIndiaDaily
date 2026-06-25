@@ -3,23 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MBA India Daily Intelligence — June 20, 2026</title>
+<title>MBA India Daily Intelligence &mdash; 25 June 2026</title>
 <style>
 :root{
-  --bg:#0B0E14;
-  --bg-card:#12161F;
-  --bg-card2:#161B26;
-  --ink:#EDEFF4;
-  --ink-dim:#9AA3B5;
-  --ink-faint:#5C6477;
-  --rule:#232A38;
-  --saffron:#FF8A3D;
-  --teal:#2BD4C9;
-  --gold:#E8B84B;
-  --red:#FF5C6C;
-  --green:#3DD68C;
-  --yellow:#E8B84B;
-  --indigo:#7C8CFF;
+  --bg:#061018;--bg-card:#0A1A24;--bg-card2:#0E2230;
+  --ink:#E8F6F8;--ink-dim:#78AAB8;--ink-faint:#3A6A78;
+  --rule:#183540;
+  --saffron:#FF7A42;--teal:#00C8E0;--gold:#FFD166;
+  --red:#FF4455;--green:#44E8A0;--indigo:#7099FF;--violet:#CC80FF;
   --serif:'Iowan Old Style','Palatino Linotype',Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,sans-serif;
   --mono:'SF Mono',ui-monospace,Menlo,monospace;
@@ -27,34 +18,13 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{
-  background:var(--bg);
-  color:var(--ink);
-  font-family:var(--sans);
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
-}
-body::before{
-  content:'';
-  position:fixed;inset:0;
-  background:
-    radial-gradient(circle at 15% 8%, rgba(255,138,61,.07), transparent 40%),
-    radial-gradient(circle at 85% 15%, rgba(43,212,201,.06), transparent 45%);
-  pointer-events:none;z-index:0;
-}
-a{color:inherit;}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
-
-/* ===== TOP BAR ===== */
-.topbar{
-  position:sticky;top:0;z-index:100;
-  background:rgba(11,14,20,.92);backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--rule);
-}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 12% 8%,rgba(255,122,66,.07),transparent 40%),radial-gradient(circle at 88% 12%,rgba(0,200,224,.07),transparent 44%);pointer-events:none;z-index:0;}
+a{color:inherit;}.wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(6,16,24,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule);}
 .topbar-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1180px;margin:0 auto;}
 .brand{display:flex;align-items:center;gap:10px;}
-.brand-mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--saffron),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:17px;color:#0B0E14;}
+.brand-mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,var(--saffron),var(--teal));display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:700;font-size:17px;color:#061018;}
 .brand-text{display:flex;flex-direction:column;line-height:1.15;}
 .brand-text .t1{font-family:var(--serif);font-size:15.5px;letter-spacing:.2px;}
 .brand-text .t2{font-size:10px;color:var(--ink-faint);letter-spacing:1.5px;text-transform:uppercase;}
@@ -62,203 +32,132 @@ a{color:inherit;}
 .nav-scroll{display:flex;gap:4px;overflow-x:auto;padding:0 24px 12px;max-width:1180px;margin:0 auto;scrollbar-width:none;}
 .nav-scroll::-webkit-scrollbar{display:none;}
 .nav-pill{flex:0 0 auto;font-size:12px;color:var(--ink-dim);background:var(--bg-card);border:1px solid var(--rule);padding:6px 13px;border-radius:100px;white-space:nowrap;cursor:pointer;transition:.2s;}
-.nav-pill:hover{color:var(--ink);border-color:var(--saffron);background:rgba(255,138,61,.08);}
-
-/* anchor offset fix so sections land below the sticky header, not mid-content */
-section, .hero-anchor{scroll-margin-top:var(--topbar-h);}
-
-/* ===== HERO ===== */
+.nav-pill:hover{color:var(--ink);border-color:var(--saffron);}
+section,.hero-anchor{scroll-margin-top:var(--topbar-h);}
 .hero{position:relative;z-index:1;padding:64px 24px 40px;max-width:1180px;margin:0 auto;}
 .hero-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--saffron);text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:10px;}
-.hero-eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(61,214,140,.18);animation:pulse 2s infinite;}
+.hero-eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(68,232,160,.18);animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-.hero h1{font-family:var(--serif);font-size:clamp(34px,5.5vw,58px);line-height:1.04;letter-spacing:-.5px;max-width:880px;}
-.hero h1 em{font-style:normal;color:var(--saffron);}
+.hero h1{font-family:var(--serif);font-size:clamp(34px,5.5vw,58px);line-height:1.1;letter-spacing:-.5px;max-width:880px;}
 .hero p.lede{margin-top:18px;color:var(--ink-dim);font-size:16px;max-width:620px;}
 .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:14px;overflow:hidden;margin-top:36px;}
 .hstat{background:var(--bg-card);padding:18px 20px;}
 .hstat .v{font-family:var(--serif);font-size:24px;color:var(--teal);}
 .hstat .v.red{color:var(--red);}
 .hstat .v.green{color:var(--green);}
+.hstat .v.amber{color:var(--saffron);}
 .hstat .l{font-size:11px;color:var(--ink-faint);margin-top:4px;letter-spacing:.3px;}
-
-/* ===== SECTION SHELL ===== */
 section{position:relative;z-index:1;padding:28px 24px 56px;border-top:1px solid var(--rule);}
 .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:28px;}
-.sec-num{font-family:var(--mono);font-size:12px;color:var(--ink-faint);}
 .sec-head h2{font-family:var(--serif);font-size:clamp(24px,3vw,32px);letter-spacing:-.3px;}
-.sec-sub{color:var(--ink-faint);font-size:13.5px;margin-bottom:32px;max-width:660px;}
-
-/* ===== STORY CARDS ===== */
-.story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px;}
-.story-grid.quad{grid-template-columns:1fr 1fr;grid-auto-rows:1fr;align-items:stretch;}
-@media(max-width:640px){.story-grid.quad{grid-template-columns:1fr 1fr;gap:10px;}}
-.story{
-  background:var(--bg-card);border:1px solid var(--rule);border-radius:14px;padding:22px;
-  display:flex;flex-direction:column;gap:10px;transition:.25s;
-}
-.story-grid.quad .story{height:100%;justify-content:space-between;}
-@media(max-width:640px){
-  .story-grid.quad .story{padding:14px;gap:7px;}
-  .story-grid.quad .story h3{font-size:14.5px;}
-  .story-grid.quad .story p{font-size:11px;}
-  .story-grid.quad .tag{font-size:8.5px;padding:2px 7px;}
-  .story-grid.quad .stars{font-size:9px;}
-  .story-grid.quad .story-foot{grid-template-columns:1fr;gap:6px;font-size:10px;}
-  .story-grid.quad .story-foot .box{padding:6px 8px;}
-  .story-grid.quad .story-src{font-size:8.5px;}
-}
-.story:hover{border-color:rgba(255,138,61,.4);transform:translateY(-2px);}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:18px;row-gap:18px;}
+@media(max-width:680px){.story-grid{grid-template-columns:1fr;}}
+.story{background:var(--bg-card);border:1px solid var(--rule);border-radius:14px;display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:10px;padding:22px;transition:.25s;align-content:start;}
+@supports not (grid-template-rows:subgrid){.story{display:flex;flex-direction:column;gap:10px;}}
+.story:hover{border-color:rgba(255,122,66,.4);transform:translateY(-2px);}
 .story-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
 .tag{font-size:10px;letter-spacing:.8px;text-transform:uppercase;padding:3px 9px;border-radius:100px;font-weight:600;}
-.tag.finance{background:rgba(124,140,255,.15);color:var(--indigo);}
-.tag.energy{background:rgba(255,92,108,.15);color:var(--red);}
-.tag.tech{background:rgba(43,212,201,.15);color:var(--teal);}
-.tag.policy{background:rgba(232,184,75,.15);color:var(--gold);}
-.tag.fmcg{background:rgba(61,214,140,.15);color:var(--green);}
-.stars{font-size:11px;color:var(--gold);letter-spacing:1px;}
+.tag.finance{background:rgba(112,153,255,.15);color:var(--indigo);}
+.tag.energy{background:rgba(255,68,85,.15);color:var(--red);}
+.tag.tech{background:rgba(0,200,224,.15);color:var(--teal);}
+.tag.policy{background:rgba(255,209,102,.15);color:var(--gold);}
+.tag.fmcg{background:rgba(68,232,160,.15);color:var(--green);}
 .story h3{font-family:var(--serif);font-size:18px;line-height:1.25;}
-.story p{font-size:13px;color:var(--ink-dim);}
-.story p b{color:var(--ink);font-weight:600;}
-.story-foot{margin-top:6px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:11.5px;}
+.story > p{font-size:15px;color:var(--ink-dim);}
+.story > p b{color:var(--ink);}
+.story-foot{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+@media(max-width:480px){.story-foot{grid-template-columns:1fr;}}
 .story-foot .box{background:var(--bg-card2);border-radius:8px;padding:8px 10px;}
-.story-foot .box .lbl{color:var(--ink-faint);font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px;}
-.story-foot .box .val{color:var(--ink);font-size:11.5px;}
-.story-src{font-size:10px;color:var(--ink-faint);font-family:var(--mono);margin-top:2px;}
-
-/* ===== FLOWCHART (vertical, single chain) ===== */
+.story-foot .box .lbl{color:var(--ink-faint);font-size:10px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px;}
+.story-foot .box .val{color:var(--ink);font-size:13.5px;}
+.story-src{font-size:10px;color:var(--ink-faint);font-family:var(--mono);}
 .flow-wrap{margin-top:40px;background:var(--bg-card);border:1px solid var(--rule);border-radius:16px;padding:32px 24px;}
 .flow-title{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:22px;text-align:center;}
-.flow{display:flex;flex-direction:column;align-items:center;gap:0;}
-.flow-node{
-  background:var(--bg-card2);border:1px solid var(--rule);border-radius:11px;
-  padding:13px 22px;font-size:13.5px;text-align:center;max-width:420px;
-  position:relative;
-}
-.flow-node.start{border-color:var(--red);color:#fff;background:linear-gradient(135deg,rgba(255,92,108,.15),rgba(255,92,108,.05));}
-.flow-node.end{border-color:var(--green);background:linear-gradient(135deg,rgba(61,214,140,.15),rgba(61,214,140,.05));}
+.flow{display:flex;flex-direction:column;align-items:center;}
+.flow-node{background:var(--bg-card2);border:1px solid var(--rule);border-radius:11px;padding:13px 22px;font-size:13.5px;text-align:center;max-width:440px;}
+.flow-node.start{border-color:var(--green);}
+.flow-node.end{border-color:var(--saffron);}
 .flow-arrow{color:var(--ink-faint);font-size:18px;padding:4px 0;}
-
-/* ===== TWO COL DATA ===== */
 .data-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 @media(max-width:760px){.data-grid{grid-template-columns:1fr;}}
 .data-card{background:var(--bg-card);border:1px solid var(--rule);border-radius:14px;padding:20px;}
-.data-card h4{font-family:var(--serif);font-size:16px;margin-bottom:10px;color:var(--saffron);}
+.data-card .data-tag{display:inline-block;font-size:10px;letter-spacing:.8px;text-transform:uppercase;font-weight:600;padding:3px 10px;border-radius:100px;margin-bottom:10px;background:rgba(255,122,66,.12);color:var(--saffron);}
+.data-tag.dt-red{background:rgba(255,68,85,.15);color:var(--red);}
+.data-tag.dt-indigo{background:rgba(112,153,255,.15);color:var(--indigo);}
+.data-tag.dt-teal{background:rgba(0,200,224,.15);color:var(--teal);}
+.data-tag.dt-gold{background:rgba(255,209,102,.15);color:var(--gold);}
+.data-tag.dt-green{background:rgba(68,232,160,.15);color:var(--green);}
+.data-tag.dt-violet{background:rgba(204,128,255,.15);color:var(--violet);}
+.data-card h4{font-family:var(--serif);font-size:16px;margin-bottom:10px;color:var(--ink);}
 .data-card ul{list-style:none;}
-.data-card li{font-size:13px;color:var(--ink-dim);padding:7px 0;border-bottom:1px solid var(--rule);}
+.data-card li{font-size:14.5px;color:var(--ink-dim);padding:7px 0;border-bottom:1px solid var(--rule);}
 .data-card li:last-child{border:none;}
 .data-card li b{color:var(--ink);}
 .data-card .src{font-size:10px;color:var(--ink-faint);font-family:var(--mono);margin-top:8px;}
-
-/* ===== HEATMAP (interactive, no dots) ===== */
-.heat-filterbar{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;}
-.heat-filter{
-  flex:1;min-width:200px;cursor:pointer;border-radius:14px;padding:16px 18px;
-  border:1.5px solid var(--rule);background:var(--bg-card);
-  display:flex;align-items:center;gap:12px;transition:.2s;user-select:none;
-}
-.heat-filter:hover{transform:translateY(-2px);}
-.heat-filter .swatch{width:16px;height:16px;border-radius:5px;flex:0 0 auto;}
-.heat-filter.g .swatch{background:var(--green);box-shadow:0 0 12px rgba(61,214,140,.5);}
-.heat-filter.y .swatch{background:var(--yellow);box-shadow:0 0 12px rgba(232,184,75,.5);}
-.heat-filter.r .swatch{background:var(--red);box-shadow:0 0 12px rgba(255,92,108,.5);}
-.heat-filter .ftxt{display:flex;flex-direction:column;}
-.heat-filter .ftxt .fn{font-size:13.5px;font-weight:600;}
-.heat-filter .ftxt .fc{font-size:10.5px;color:var(--ink-faint);font-family:var(--mono);}
-.heat-filter.active.g{border-color:var(--green);background:rgba(61,214,140,.08);}
-.heat-filter.active.y{border-color:var(--yellow);background:rgba(232,184,75,.08);}
-.heat-filter.active.r{border-color:var(--red);background:rgba(255,92,108,.08);}
-
-.heat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
-.heat-card{
-  background:var(--bg-card);border:1px solid var(--rule);border-left:4px solid var(--rule);
-  border-radius:12px;padding:16px;cursor:pointer;transition:.2s;
-}
-.heat-card.g{border-left-color:var(--green);}
-.heat-card.y{border-left-color:var(--yellow);}
-.heat-card.r{border-left-color:var(--red);}
-.heat-card:hover{border-color:var(--saffron);}
-.heat-card.hidden{display:none;}
-.heat-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
-.heat-top .ind{font-size:14px;font-weight:600;}
-.heat-top .status{font-size:9.5px;text-transform:uppercase;letter-spacing:.6px;font-family:var(--mono);}
-.heat-card.g .status{color:var(--green);}
-.heat-card.y .status{color:var(--yellow);}
-.heat-card.r .status{color:var(--red);}
-.heat-card p{font-size:12px;color:var(--ink-faint);}
-.heat-detail{
-  display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--rule);
-  font-size:11.5px;color:var(--ink-dim);
-}
-.heat-card.open .heat-detail{display:block;}
-.heat-detail .lbl{font-size:9.5px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.6px;margin-bottom:2px;}
-.heat-detail .lbl:not(:first-child){margin-top:8px;}
-
-/* ===== CONNECTION MAP — multi-chain flowchart ===== */
 .cm-wrap{background:var(--bg-card);border:1px solid var(--rule);border-radius:16px;padding:32px 22px;}
 .cm-title{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-faint);margin-bottom:26px;text-align:center;}
 .cm-chains{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
 @media(max-width:820px){.cm-chains{grid-template-columns:1fr;}}
-.cm-chain{display:flex;flex-direction:column;align-items:center;gap:0;}
+.cm-chain{display:flex;flex-direction:column;align-items:center;}
 .cm-chain-label{font-family:var(--mono);font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--saffron);margin-bottom:14px;text-align:center;}
-.cm-node{
-  width:100%;background:var(--bg-card2);border:1px solid var(--rule);border-radius:10px;
-  padding:11px 14px;font-size:12px;text-align:center;line-height:1.35;
-}
-.cm-node.root{border-color:var(--red);background:linear-gradient(135deg,rgba(255,92,108,.14),rgba(255,92,108,.04));}
+.cm-node{width:100%;background:var(--bg-card2);border:1px solid var(--rule);border-radius:10px;padding:11px 14px;font-size:12px;text-align:center;line-height:1.35;}
+.cm-node.root{border-color:var(--red);}
 .cm-arrow{color:var(--ink-faint);font-size:16px;padding:4px 0;}
 .cm-merge{display:flex;justify-content:center;align-items:center;gap:14px;margin:22px 0 10px;}
 .cm-merge-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--rule) 30%,var(--rule) 70%,transparent);}
 .cm-merge-arrow{color:var(--saffron);font-size:22px;}
-.cm-final{
-  max-width:680px;margin:0 auto;background:linear-gradient(135deg,rgba(61,214,140,.14),rgba(61,214,140,.04));
-  border:1px solid var(--green);border-radius:12px;padding:18px 24px;text-align:center;font-size:13.5px;
-}
-.cm-final b{color:var(--green);}
+.cm-final{max-width:680px;margin:0 auto;background:linear-gradient(135deg,rgba(0,200,224,.12),rgba(0,200,224,.04));border:1px solid var(--teal);border-radius:12px;padding:18px 24px;text-align:center;font-size:14px;}
+.cm-final b{color:var(--teal);}
 .cm-cross{margin-top:18px;text-align:center;font-size:11px;color:var(--ink-faint);font-family:var(--mono);}
-
-/* ===== INSIGHT CARDS ===== */
-.insight{background:var(--bg-card);border:1px solid var(--rule);border-left:3px solid var(--saffron);border-radius:10px;padding:18px 20px;margin-bottom:14px;}
-.insight .num{font-family:var(--serif);font-size:13px;color:var(--saffron);margin-bottom:6px;}
-.insight h4{font-family:var(--serif);font-size:17px;margin-bottom:8px;}
-.insight-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:10px;}
-@media(max-width:600px){.insight-grid{grid-template-columns:1fr;}}
-.insight-grid .ig{font-size:12px;color:var(--ink-dim);}
-.insight-grid .ig span{color:var(--ink-faint);font-size:10px;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:2px;}
-
-/* ===== QUOTE ===== */
-.quote-card{background:linear-gradient(135deg,rgba(255,138,61,.08),rgba(43,212,201,.05));border:1px solid var(--rule);border-radius:18px;padding:48px;text-align:center;}
+.heat-filterbar{display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;}
+.heat-filter{flex:1;min-width:200px;cursor:pointer;border-radius:14px;padding:16px 18px;border:1.5px solid var(--rule);background:var(--bg-card);display:flex;align-items:center;gap:12px;transition:.2s;user-select:none;}
+.heat-filter .swatch{width:16px;height:16px;border-radius:5px;flex:0 0 auto;}
+.heat-filter.g .swatch{background:var(--green);}
+.heat-filter.y .swatch{background:var(--gold);}
+.heat-filter.r .swatch{background:var(--red);}
+.heat-filter .ftxt .fn{font-size:13.5px;font-weight:600;}
+.heat-filter.active.g{border-color:var(--green);background:rgba(68,232,160,.08);}
+.heat-filter.active.y{border-color:var(--gold);background:rgba(255,209,102,.08);}
+.heat-filter.active.r{border-color:var(--red);background:rgba(255,68,85,.08);}
+.heat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:12px;}
+.heat-card{background:var(--bg-card);border:1px solid var(--rule);border-left:4px solid var(--rule);border-radius:12px;padding:16px;cursor:pointer;transition:.2s;}
+.heat-card.g{border-left-color:var(--green);}
+.heat-card.y{border-left-color:var(--gold);}
+.heat-card.r{border-left-color:var(--red);}
+.heat-card:hover{border-color:var(--saffron);}
+.heat-card.hidden{display:none;}
+.heat-top .ind{font-size:14px;font-weight:600;}
+.heat-card > p{font-size:13.5px;color:var(--ink-faint);margin-top:4px;}
+.heat-detail{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--rule);font-size:11.5px;color:var(--ink-dim);}
+.heat-card.open .heat-detail{display:block;}
+.heat-detail .lbl{font-size:9.5px;color:var(--teal);text-transform:uppercase;letter-spacing:.6px;display:block;margin:8px 0 3px;}
+.heat-detail .lbl:first-child{margin-top:0;}
+.quote-card{background:linear-gradient(135deg,rgba(255,122,66,.08),rgba(0,200,224,.05));border:1px solid var(--rule);border-radius:18px;padding:48px;text-align:center;}
 .quote-card blockquote{font-family:var(--serif);font-size:clamp(20px,3vw,28px);line-height:1.4;max-width:760px;margin:0 auto;}
 .quote-card cite{display:block;margin-top:18px;font-size:13px;color:var(--saffron);font-style:normal;letter-spacing:.5px;}
-
 footer{padding:40px 24px;text-align:center;color:var(--ink-faint);font-size:12px;border-top:1px solid var(--rule);}
-
-@media(max-width:600px){
-  .hero-stats{grid-template-columns:repeat(2,1fr);}
-}
+@media(max-width:600px){.hero-stats{grid-template-columns:repeat(2,1fr);}}
 </style>
 </head>
 <body>
+
 <div class="topbar">
   <div class="topbar-inner">
     <div class="brand">
       <div class="brand-mark">M</div>
-      <div class="brand-text">
-        <span class="t1">MBA India Daily</span>
-        <span class="t2">Business Intelligence</span>
-      </div>
+      <div class="brand-text"><span class="t1">MBA India Daily</span><span class="t2">Business Intelligence</span></div>
     </div>
-    <div class="topbar-date">SAT · 20 JUN 2026</div>
+    <div class="topbar-date">THURSDAY &middot; 25 JUNE 2026</div>
   </div>
   <div class="nav-scroll">
     <div class="nav-pill" onclick="document.getElementById('s1').scrollIntoView({behavior:'smooth',block:'start'})">Top Stories</div>
     <div class="nav-pill" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth',block:'start'})">India Economy</div>
-    <div class="nav-pill" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth',block:'start'})">Global → India</div>
+    <div class="nav-pill" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth',block:'start'})">Global &rarr; India</div>
     <div class="nav-pill" onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth',block:'start'})">Finance</div>
     <div class="nav-pill" onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth',block:'start'})">Marketing</div>
-    <div class="nav-pill" onclick="document.getElementById('s6').scrollIntoView({behavior:'smooth',block:'start'})">Ops & Supply</div>
-    <div class="nav-pill" onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth',block:'start'})">HR & Leadership</div>
-    <div class="nav-pill" onclick="document.getElementById('s8').scrollIntoView({behavior:'smooth',block:'start'})">Tech & AI</div>
+    <div class="nav-pill" onclick="document.getElementById('s6').scrollIntoView({behavior:'smooth',block:'start'})">Ops &amp; Supply</div>
+    <div class="nav-pill" onclick="document.getElementById('s7').scrollIntoView({behavior:'smooth',block:'start'})">HR &amp; Leadership</div>
+    <div class="nav-pill" onclick="document.getElementById('s8').scrollIntoView({behavior:'smooth',block:'start'})">Tech &amp; AI</div>
     <div class="nav-pill" onclick="document.getElementById('s9').scrollIntoView({behavior:'smooth',block:'start'})">Startups</div>
     <div class="nav-pill" onclick="document.getElementById('s10').scrollIntoView({behavior:'smooth',block:'start'})">Connection Map</div>
     <div class="nav-pill" onclick="document.getElementById('s11').scrollIntoView({behavior:'smooth',block:'start'})">Heat Map</div>
@@ -266,827 +165,665 @@ footer{padding:40px 24px;text-align:center;color:var(--ink-faint);font-size:12px
   </div>
 </div>
 
-<!-- HERO -->
 <div class="hero hero-anchor" id="top">
-  <div class="hero-eyebrow">Live Briefing · Updated this morning</div>
-  <h1>Markets just rallied for the fifth day in a row. IT investors didn't get the memo.</h1>
-  <p class="lede">A ceasefire eased oil fears, the Fed hinted at higher rates, and one sector ended up on the losing side of both stories. Here's how to read a market that's up and down at the same time.</p>
+  <div class="hero-eyebrow">Live Briefing &middot; Thursday Edition</div>
+  <h1>Micron beat Wall Street by &#x20B9;5 lakh crore overnight.<br>India&#39;s monsoon is 43% below normal.<br>And the government is selling railway shares to you today.</h1>
+  <p class="lede">Micron&#39;s blowout earnings validated the entire AI memory thesis &mdash; Sensex is recovering sharply. But a separate, quieter crisis is building: India&rsquo;s monsoon is having its worst June in years and 315 districts face crop failure risk. Both stories matter enormously for your investment thinking and career planning.</p>
   <div class="hero-stats">
-    <div class="hstat"><div class="v green">+0.33%</div><div class="l">SENSEX, 5TH STRAIGHT GAIN</div></div>
-    <div class="hstat"><div class="v red">$80</div><div class="l">BRENT CRUDE, WEEK-ON-WEEK DOWN ~9%</div></div>
-    <div class="hstat"><div class="v">$234M</div><div class="l">SARVAM AI'S SERIES B</div></div>
-    <div class="hstat"><div class="v green">+22,000</div><div class="l">NET NEW GCC ROLES, MAY 2026</div></div>
+    <div class="hstat"><div class="v green">$41.46B</div><div class="l">MICRON Q3 REVENUE (RECORD)</div></div>
+    <div class="hstat"><div class="v red">-43%</div><div class="l">MONSOON DEFICIT</div></div>
+    <div class="hstat"><div class="v amber">+777 pts</div><div class="l">SENSEX RECOVERY</div></div>
+    <div class="hstat"><div class="v">&#x20B9;91</div><div class="l">IRFC OFS FLOOR PRICE TODAY</div></div>
   </div>
 </div>
 
-<!-- SECTION 1: TOP STORIES -->
+<!-- S1 TOP STORIES -->
 <section id="s1">
   <div class="wrap">
     <div class="sec-head"><h2>Top Stories Every MBA Student Must Know</h2></div>
-
     <div class="story-grid">
 
       <div class="story">
+        <div class="story-top"><span class="tag tech">AI Earnings</span></div>
+        <h3>Micron just reported results that beat Wall Street by so much, analysts are still doing the math.</h3>
+        <p>Micron reported fiscal Q3 2026 revenue of <b>$41.46 billion</b> &mdash; beating the consensus estimate of $35.25 billion by over $6 billion. EPS came in at <b>$25.11</b>, beating estimates of $20.28 by <b>23.8%</b>. Gross margins hit <b>84.6%</b>. And then came the guidance: Q4 revenue of <b>$50 billion</b> &mdash; against estimates of $44 billion. CEO Sanjay Mehrotra said Micron can currently supply only half to two-thirds of customer demand for its AI memory chips. It has collected <b>$22 billion in customer prepayments</b> &mdash; hyperscalers paying years in advance just to secure supply.</p>
+        <div class="story-foot">
+          <div class="box"><div class="lbl">Why it matters</div><div class="val">A $6 billion revenue beat on a $35 billion estimate is not a rounding error &mdash; it is a signal that AI infrastructure spending is accelerating far beyond what analysts modelled. Micron&rsquo;s blowout answers yesterday&rsquo;s question definitively: the AI boom is not hype. It is showing up in actual revenue.</div></div>
+          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">When a company collects $22 billion in prepayments from customers desperate to secure supply, that is the most reliable revenue a business can have. Compare this to companies chasing customers. The most valuable position in any supply chain is &ldquo;irreplaceable bottleneck.&rdquo;</div></div>
+        </div>
+        <div class="story-src">Source: 24/7 Wall St., Investing.com, StockTitan, TheNextWeb</div>
+      </div>
+
+      <div class="story">
+        <div class="story-top"><span class="tag energy">Agriculture</span></div>
+        <h3>India&#39;s monsoon is 43% below normal &mdash; the first below-normal forecast in 11 years &mdash; and 315 districts are at risk.</h3>
+        <p>As of June 22, India had received <b>45.6 mm of rainfall</b> against the normal 84.4 mm &mdash; a <b>46% deficit</b>. Agriculture Minister Shivraj Singh Chouhan warned that <b>315 districts</b> across India are likely to receive below-normal rainfall this kharif season. The crops most at risk: rice, maize, pulses, cotton, soybean and sugarcane. The IMD has already issued the first below-normal monsoon forecast in 11 years, projecting seasonal rainfall at just 90% of the Long Period Average.</p>
+        <div class="story-foot">
+          <div class="box"><div class="lbl">Why it matters</div><div class="val">Agriculture employs 45% of India&rsquo;s workforce. A weak kharif season travels through rural wages, food prices, tractor sales, two-wheeler demand and rural banking. The 2023 monsoon deficit pushed food inflation to 11.5% in July 2023. India is tracking toward a similar, potentially worse, outcome in 2026.</div></div>
+          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">A monsoon deficit is not visible in the Sensex today. It shows up in corporate earnings 2-3 quarters later &mdash; in FMCG volume declines, rural dealership slowdowns and banking NPAs in agricultural lending. The monsoon is a leading indicator, not a coincident one.</div></div>
+        </div>
+        <div class="story-src">Source: Outlook India, Outlook Business, Business Today, Policy Circle</div>
+      </div>
+
+      <div class="story">
         <div class="story-top"><span class="tag finance">Markets</span></div>
-        <h3>Sensex rallies for a 5th straight session — but IT sits this one out</h3>
-        <p>The Sensex closed up 0.33% at 77,410 on Thursday, its fifth consecutive gain, lifted by falling crude oil prices. Yet Infosys, TCS, Tech Mahindra and HCL Tech all fell, dragged down by a hawkish surprise from the US Federal Reserve.</p>
+        <h3>Sensex recovered 777 points yesterday as Micron&rsquo;s earnings reversed IT sentiment and RBI gave banks a new tool.</h3>
+        <p>After Tuesday&rsquo;s 893-point crash, the Sensex gained <b>777 points (+1.02%)</b> on June 24 to close at 76,978. <b>Tech Mahindra led all gainers at +3.22%</b>, followed by Bajaj Finance (+2.87%) and IndusInd Bank (+2.63%). Banks rallied after the RBI allowed <b>loans to NRIs against FCNR foreign-currency deposits</b>, easing funding constraints. IT stocks also advanced on the back of Micron&rsquo;s strong pre-earnings signals. JPMorgan downgraded three Indian IT names in the same session, but positive signals from banking and tech kept the index green.</p>
         <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">A single index number can hide two opposite stories — broad market optimism and sector-specific pain, happening at once.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Never read "the market is up" as "every sector is up" — always check what's driving the headline number.</div></div>
+          <div class="box"><div class="lbl">Why it matters</div><div class="val">A 777-point recovery after an 893-point crash shows that the Tuesday selloff was sentiment-driven rather than fundamental. Markets moved from fear to confidence in 24 hours &mdash; not because anything structural changed, but because one earnings report provided the clarity the market was waiting for.</div></div>
+          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">The same market that falls 893 points in panic rises 777 the next day when the fear resolves. This is why staying invested through short-term volatility events consistently outperforms moving to cash &mdash; you capture the recovery only if you are still in the market when it happens.</div></div>
         </div>
-        <div class="story-src">Source: Trading Economics, HDFC Sky</div>
+        <div class="story-src">Source: Trading Economics, Upstox, HDFCSky</div>
       </div>
 
       <div class="story">
-        <div class="story-top"><span class="tag energy">Energy</span></div>
-        <h3>An overnight ceasefire just calmed the oil market</h3>
-        <p>The US and Iran signed an interim ceasefire agreement, and Brent crude — which had spiked above $80 during the conflict — is now on track for a weekly decline of roughly 8-10%, even as Iran began requiring mandatory insurance for ships transiting the Strait of Hormuz.</p>
+        <div class="story-top"><span class="tag policy">Government OFS</span></div>
+        <h3>The government is selling its IRFC shares at a 7.79% discount today &mdash; and retail investors get to buy tomorrow.</h3>
+        <p>The Department of Investment and Public Asset Management (DIPAM) is divesting a <b>2% stake in Indian Railway Finance Corporation (IRFC)</b> through an Offer for Sale (OFS). Over <b>26.13 crore shares</b> are on offer at a <b>floor price of &#x20B9;91 per share</b> &mdash; a <b>7.79% discount</b> to Tuesday&rsquo;s closing price of &#x20B9;98.7. The OFS will raise <b>over &#x20B9;2,300 crore</b> for the government. Non-retail investors (institutions) can bid today; <b>retail investors get access tomorrow</b> (June 25).</p>
         <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">A diplomatic deal can move oil prices faster than any company earnings call — and India is one of the world's most oil-sensitive economies.</div></div>
-          <div class="box"><div class="lbl">Consumer impact</div><div class="val">If lower oil prices hold, fuel and transport costs could ease in the coming weeks — a rare bit of relief.</div></div>
+          <div class="box"><div class="lbl">Why it matters</div><div class="val">An OFS by the government is essentially a government-regulated stock sale at a guaranteed discount. This is different from an IPO (new shares) or a secondary market purchase (you pay the current price). An OFS lets retail investors buy at the fixed floor price &mdash; &#x20B9;91 &mdash; regardless of where the market trades above it.</div></div>
+          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">IRFC finances railway infrastructure projects for Indian Railways. It is not a risk-free investment, but it is a government-backed entity with a captive client (Indian Railways). The OFS mechanism and its retail pricing are worth understanding for any MBA student building investment knowledge.</div></div>
         </div>
-        <div class="story-src">Source: Trading Economics Commodity Desk</div>
+        <div class="story-src">Source: Upstox, DIPAM, HDFCSky</div>
       </div>
 
       <div class="story">
-        <div class="story-top"><span class="tag tech">AI / Funding</span></div>
-        <h3>Sarvam AI closes India's biggest funding round of the week — $234 million</h3>
-        <p>Sarvam AI, building foundation models for Indian languages, closed a $234 million Series B, the single largest deal in a week where AI startups collectively raised over $265 million across five companies.</p>
+        <div class="story-top"><span class="tag tech">IT Sector</span></div>
+        <h3>JPMorgan downgraded HCL Tech, Wipro and Tata Tech.<br>On the same day, Nandan Nilekani said Infosys is &ldquo;more relevant than ever.&rdquo;</h3>
+        <p>JPMorgan downgraded HCL Technologies, Wipro and Tata Technologies simultaneously, warning that <b>AI-driven disruption, cautious enterprise spending and geopolitical uncertainty</b> could keep Indian IT sector growth subdued for the foreseeable future. Hours later, Infosys Chairman <b>Nandan Nilekani</b> said AI will not replace companies like Infosys but &ldquo;amplify those moving with purpose and speed,&rdquo; and that Infosys is <b>eyeing $300&ndash;400 billion in AI opportunities by 2030</b>.</p>
         <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">India is betting on "sovereign AI" — models built for Indian languages and context, not just adapted from US models.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Localisation (language, culture, context) is becoming a genuine competitive moat in AI, not just a nice-to-have.</div></div>
+          <div class="box"><div class="lbl">Why it matters</div><div class="val">Both JPMorgan and Nilekani are making defensible arguments about the same sector. JPMorgan is looking at near-term demand signals. Nilekani is looking at a 4-year strategic horizon. Neither is wrong &mdash; they are measuring different time windows. Understanding this difference is the entire skill of separating short-term noise from long-term signal.</div></div>
+          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">When an investment bank downgrades a sector and the sector&rsquo;s own leadership simultaneously articulates a compelling counter-narrative, the truth is usually somewhere in the middle: near-term pressure is real, but structural opportunity is also real. Both can be true at the same time.</div></div>
         </div>
-        <div class="story-src">Source: Inc42 Weekly Funding Tracker</div>
+        <div class="story-src">Source: Upstox, Trading Economics, HDFCSky</div>
       </div>
 
       <div class="story">
-        <div class="story-top"><span class="tag finance">Startups</span></div>
-        <h3>Startup funding jumps to $426 million in a single week</h3>
-        <p>Indian startups raised $426 million across 19 deals between June 15-19, a sharp jump from $243 million across 25 deals the week before — even as average deal sizes shrink and seed funding stays thin.</p>
+        <div class="story-top"><span class="tag policy">Banking Policy</span></div>
+        <h3>RBI just gave NRIs a new way to lend money to India at a guaranteed rate &mdash; and banks rallied immediately.</h3>
+        <p>The RBI announced a new mechanism allowing banks to give <b>loans to NRIs (Non-Resident Indians) against their FCNR (Foreign Currency Non-Resident) deposits</b>. This means NRIs who hold dollar deposits in Indian banks can now borrow rupees against those deposits for Indian investments or purposes &mdash; without liquidating their foreign currency savings. Banks rallied immediately: <b>ICICI Bank, HDFC Bank, Axis Bank and Kotak Bank gained up to 2.7%</b> on the news.</p>
         <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">Capital is concentrating into fewer, larger, more confident bets rather than spreading across many small ones.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Watch deal concentration, not just headline totals — it tells you where investor conviction really lies.</div></div>
+          <div class="box"><div class="lbl">Why it matters</div><div class="val">This policy change serves two purposes simultaneously: it encourages more NRI deposits (which bring dollars into India and support the rupee) and it creates a new lending product for banks. It is a classic RBI dual-objective move &mdash; managing the currency and deepening the credit market at the same time.</div></div>
+          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Whenever a central bank creates a new credit facility, the banks that execute it fastest build first-mover advantage in a new customer segment. Any NRI you know with significant Indian bank savings should now be asking their bank about this specific product &mdash; most branches will not proactively offer it.</div></div>
         </div>
-        <div class="story-src">Source: Inc42 Weekly Funding Tracker</div>
-      </div>
-
-      <div class="story">
-        <div class="story-top"><span class="tag finance">Fintech</span></div>
-        <h3>Razorpay quietly files confidential IPO papers</h3>
-        <p>Payments major Razorpay has filed confidential pre-IPO papers, joining a small list of Indian fintech unicorns testing whether public markets will reward their growth story.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">A confidential filing lets a company test investor appetite without committing to a public timeline — a sign of cautious optimism.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Even "obvious" IPO candidates are moving carefully in this selective listing environment.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Startup Desk</div>
-      </div>
-
-      <div class="story">
-        <div class="story-top"><span class="tag tech">Infrastructure</span></div>
-        <h3>Meta and Reliance break ground on a 168MW AI data centre</h3>
-        <p>Meta will lease capacity at a new 168-megawatt AI-enabled data centre Reliance is building in Jamnagar, Gujarat — powered by renewable energy and cooled using desalinated seawater, ready within two years.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">Global AI giants now see India not just as a market for AI products, but as a place to physically build AI infrastructure.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Infrastructure partnerships like this are multi-year commitments — a strong signal of long-term confidence, not just a press release.</div></div>
-        </div>
-        <div class="story-src">Source: TechCrunch, Reliance Industries press release</div>
-      </div>
-
-      <div class="story">
-        <div class="story-top"><span class="tag policy">Workforce</span></div>
-        <h3>GCCs added 22,000 jobs in May — even as IT layoffs continued</h3>
-        <p>India's Global Capability Centres added a net ~22,000 roles in May 2026 alone, even as IT services firms' net headcount fell ~7,000 over the same month — proof that the job market is shifting, not shrinking.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">"IT job losses" headlines hide a bigger story: jobs are migrating from services firms to in-house global capability centres.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Track where hiring is moving to, not just where it's falling — the real opportunity is often one level deeper than the headline.</div></div>
-        </div>
-        <div class="story-src">Source: OwnYourCareer Labor Market Intelligence</div>
-      </div>
-
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Creator Economy</span></div>
-        <h3>Flipkart and Meta launch a creator affiliate programme</h3>
-        <p>Flipkart and Meta have launched an affiliate programme using Facebook product tags, letting creators earn directly when their content drives a sale — bringing shoppable social content formally into India's e-commerce stack.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">E-commerce and social media are merging into a single purchase journey — discovery and checkout no longer need separate apps.</div></div>
-          <div class="box"><div class="lbl">Consumer impact</div><div class="val">Expect to see more "shop this post" buttons directly inside your social feed.</div></div>
-        </div>
-        <div class="story-src">Source: News18 Business / Meta India</div>
-      </div>
-
-      <div class="story">
-        <div class="story-top"><span class="tag policy">Science</span></div>
-        <h3>An Indian-origin physicist wins the Wolf Prize</h3>
-        <p>Jainendra K Jain has won the prestigious Wolf Prize in Physics for discovering composite fermions, a breakthrough that reshaped quantum theory and is considered one of physics' top honours after the Nobel.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Why it matters</div><div class="val">Frontier science recognition builds India's long-term reputation as a source of deep research talent, not just IT services labour.</div></div>
-          <div class="box"><div class="lbl">Manager takeaway</div><div class="val">Talent pipelines that look unrelated to business today (pure physics) often seed tomorrow's deep-tech industries (like quantum computing).</div></div>
-        </div>
-        <div class="story-src">Source: Business Standard</div>
+        <div class="story-src">Source: Trading Economics, Business Standard (Banking Roundup)</div>
       </div>
 
     </div>
 
     <div class="flow-wrap">
-      <div class="flow-title">How a Ceasefire and a Fed Statement Pulled the Market in Two Directions</div>
+      <div class="flow-title">How Micron&#39;s Overnight Results Travelled From New York to Your IT Portfolio in India</div>
       <div class="flow">
-        <div class="flow-node start">US-Iran sign an interim ceasefire overnight</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-node">Oil-price fear eases → Brent heads for a sharp weekly decline</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-node">Lower oil costs lift sentiment → Sensex extends its rally to 5 days</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-node">Same morning, the US Fed signals a possible rate hike, not a cut</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-node">Higher future US rates hurt export-heavy IT stocks specifically</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-node end">Result: a market at a 5-day high, with IT stocks still falling inside it</div>
+        <div class="flow-node start">Micron reports: $41.46B revenue, $50B Q4 guidance &mdash; beats Wall Street by $6B+</div>
+        <div class="flow-arrow">&darr;</div>
+        <div class="flow-node">AI infrastructure spending confirmed as real &mdash; hyperscaler capex is accelerating, not pausing</div>
+        <div class="flow-arrow">&darr;</div>
+        <div class="flow-node">Nasdaq futures jump overnight &mdash; US tech sentiment reverses sharply from Tuesday&rsquo;s fear</div>
+        <div class="flow-arrow">&darr;</div>
+        <div class="flow-node">Indian IT stocks rally: Tech Mahindra +3.22%, Infosys, Wipro, TCS all green on Thursday open</div>
+        <div class="flow-arrow">&darr;</div>
+        <div class="flow-node end">Sensex extends recovery: AI narrative intact, defensive rotation reverses</div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- SECTION 2: INDIA ECONOMY -->
+<!-- S2 ECONOMY -->
 <section id="s2">
   <div class="wrap">
     <div class="sec-head"><h2>India Economy</h2></div>
-
     <div class="data-grid">
       <div class="data-card">
-        <h4>RBI's June MPC: rate held, GDP cut, inflation raised</h4>
+        <div class="data-tag dt-red">Climate Risk</div>
+        <h4>Five scientific reasons why India&rsquo;s monsoon is stuck &mdash; and why July is the critical recovery window</h4>
         <ul>
-          <li><b>What happened?</b> RBI Governor Sanjay Malhotra kept the repo rate unchanged at 5.25%, cut the FY27 GDP growth forecast from 6.9% to 6.6%, and raised the inflation projection from 4.6% to 5.1%, citing West Asia risks.</li>
-          <li><b>Why managers care:</b> A central bank cutting growth and raising inflation forecasts together is flagging a tougher environment to plan pricing and investment in.</li>
-          <li><b>Consumer feel:</b> Loan EMIs stay put for now, but daily essentials may get pricier as the inflation outlook worsens.</li>
+          <li><b>What happened?</b> The IMD identified five major meteorological reasons for the 43% June deficit: absence of favourable large-scale systems, stalled Bay of Bengal low-pressure development, weak Arabian Sea branch activity, El Ni&ntilde;o conditions building over the Pacific, and limited moisture transport from the Indian Ocean Dipole.</li>
+          <li><b>Why managers care:</b> El Ni&ntilde;o conditions typically persist through the full season once established. If July and August do not deliver recovery rainfall, India faces a scenario where food inflation could approach 5.5% (from today&rsquo;s 3.48%), and rural consumption &mdash; which drives tractor sales, two-wheelers and entry-level FMCG &mdash; softens meaningfully through Q2 and Q3.</li>
+          <li><b>Consumer feel:</b> The hotter, drier conditions that come with a weak monsoon affect your daily life through higher vegetable prices, increased electricity bills (more AC use), and gradually rising prices for pulses and cooking oils as domestic supply falls short.</li>
         </ul>
-        <div class="src">Source: WION News, Business Standard</div>
+        <div class="src">Source: Business Today, IMD, Outlook Business</div>
       </div>
       <div class="data-card">
-        <h4>Domestic money cushions foreign selling</h4>
+        <div class="data-tag dt-red">Inflation Watch</div>
+        <h4>Retail inflation is 3.48%. Wholesale inflation is 8.3%. That gap is the warning signal most people are missing.</h4>
         <ul>
-          <li><b>What happened?</b> Foreign Institutional Investors net sold ₹1,025 crore on June 18 while Domestic Institutional Investors net bought ₹3,517 crore the same day.</li>
-          <li><b>Why managers care:</b> India's growing pool of domestic mutual fund and insurance money is increasingly able to absorb foreign selling without crashing the market.</li>
-          <li><b>Consumer feel:</b> Retail SIP investors are quietly becoming a stabilising force in the market they invest into.</li>
+          <li><b>What happened?</b> India&rsquo;s retail CPI inflation is a comfortable 3.48% in April 2026 &mdash; well below the RBI&rsquo;s 4% target. But wholesale inflation (WPI) surged to 8.3%. When wholesale prices rise faster than consumer prices, it means producers are absorbing costs today that they will eventually pass to consumers. The pipe is filling up.</li>
+          <li><b>Why managers care:</b> This divergence is a leading indicator of future retail inflation. Companies currently absorbing higher raw material costs will eventually have to raise prices. When they do &mdash; likely in Q3 and Q4 if monsoon remains weak &mdash; retail inflation will jump more quickly than the current benign number suggests. Building this scenario into pricing and cost models now is far better than reacting to it.</li>
+          <li><b>Consumer feel:</b> The gap between what you pay at the supermarket today and what producers are paying for raw materials will close over the next 2-3 quarters. Prices will rise. The only question is how fast.</li>
         </ul>
-        <div class="src">Source: Trendlyne FII/DII Tracker</div>
+        <div class="src">Source: Kotak Neo Insights, Wright Research, Policy Circle</div>
       </div>
       <div class="data-card">
-        <h4>Trade deficit stays wide on gold and freight costs</h4>
+        <div class="data-tag dt-indigo">Banking Reform</div>
+        <h4>IDBI Bank&rsquo;s privatisation is advancing &mdash; government selling 30.48%, LIC selling 30.24%</h4>
         <ul>
-          <li><b>What happened?</b> India's merchandise trade deficit recently widened to $27.1 billion, driven by a 24% jump in imports — largely gold, silver, and elevated freight costs.</li>
-          <li><b>Why managers care:</b> A widening deficit pressures the rupee and signals rising input costs for import-dependent businesses.</li>
-          <li><b>Consumer feel:</b> Gold jewellery and imported goods stay expensive; this indirectly nudges fuel and electronics prices too.</li>
+          <li><b>What happened?</b> The government plans to divest a 30.48% stake in IDBI Bank while LIC (Life Insurance Corporation) simultaneously sells 30.24%. Following a ministerial clarification, IDBI Bank shares gained sharply. The divestment is a flagship part of India&rsquo;s banking sector reform and capital recycling strategy.</li>
+          <li><b>Why managers care:</b> IDBI Bank&rsquo;s privatisation is a test of whether India can credibly execute major public sector bank privatisations &mdash; a process that has been announced, delayed and re-announced for years. A successful transaction would signal that India&rsquo;s PSU reform agenda is executable, not just aspirational. This matters for foreign investors evaluating India&rsquo;s policy credibility.</li>
+          <li><b>Consumer feel:</b> IDBI Bank&rsquo;s privatisation, if successful, would likely improve service quality and product innovation at the bank over time as private management displaces government bureaucracy in daily operations.</li>
         </ul>
-        <div class="src">Source: Ministry of Commerce data, Trading Economics</div>
+        <div class="src">Source: Banking Finance India, Business Standard</div>
       </div>
       <div class="data-card">
-        <h4>Revised Budget eases compliance for taxpayers and businesses</h4>
+        <div class="data-tag dt-gold">Agri Watch</div>
+        <h4>Soybean sowing is lagging &mdash; and that matters more than most people realise for India&rsquo;s edible oil bill</h4>
         <ul>
-          <li><b>What happened?</b> The revised Budget seeks to ease the compliance burden on taxpayers and businesses while strengthening revenue mobilisation through a mix of concessions and tighter enforcement elsewhere.</li>
-          <li><b>Why managers care:</b> Lower compliance friction can free up management bandwidth currently spent on paperwork rather than growth.</li>
-          <li><b>Consumer feel:</b> Simpler business compliance can indirectly translate into more competitive pricing over time.</li>
+          <li><b>What happened?</b> Agriculture Minister Shivraj Singh Chouhan specifically flagged soybean sowing as lagging behind normal levels this kharif season. India produces about 13-14 million tonnes of soybean annually &mdash; used for both edible oil and protein meal. Any shortfall deepens India&rsquo;s dependence on imported palm oil and soybean from Malaysia, Indonesia and Brazil.</li>
+          <li><b>Why managers care:</b> India&rsquo;s edible oil import bill was already elevated. A domestic soybean shortfall pushes it higher. For FMCG companies that use edible oils in their products (biscuits, chips, ready meals, personal care), this is a direct input cost pressure. Vegetable oil prices are the hidden inflation variable inside almost every packaged food product.</li>
+          <li><b>Consumer feel:</b> Cooking oil prices in India are already high from past import-dependent episodes. A weak kharif soybean crop means they stay elevated or rise further through Q3 and Q4.</li>
         </ul>
-        <div class="src">Source: Business Standard Policy Desk</div>
+        <div class="src">Source: Outlook India, Outlook Business, Wright Research</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 3: GLOBAL -->
+<!-- S3 GLOBAL -->
 <section id="s3">
   <div class="wrap">
     <div class="sec-head"><h2>Global Events That Impact India</h2></div>
-
     <div class="data-grid">
       <div class="data-card">
-        <h4>🇺🇸🇮🇷 Ceasefire meets a hawkish Fed — on the same day</h4>
+        <div class="data-tag dt-teal">AI Infrastructure</div>
+        <h4>&#127482;&#127480; Micron and Anthropic just signed a strategic agreement to build next-generation AI infrastructure together</h4>
         <ul>
-          <li>The US-Iran interim ceasefire signing coincided with the US Federal Reserve keeping rates unchanged but signalling a possible hike (not a cut) later this year — two opposite signals landing together.</li>
-          <li><b>How it affects India:</b> Lower oil-driven optimism lifted Indian markets broadly, while the rate-hike signal specifically punished export-heavy IT stocks reliant on US client budgets.</li>
+          <li>On June 22, Micron and Anthropic (the AI safety company that created Claude, the world&rsquo;s most used AI assistant) announced a Strategic Agreement to scale next-generation AI infrastructure. The partnership means Anthropic&rsquo;s AI models will be powered by Micron&rsquo;s HBM4 memory chips specifically optimised for large-language model inference workloads.</li>
+          <li><b>How it affects India:</b> Anthropic&rsquo;s models are used across Indian enterprises, Indian government AI projects and Indian startup products. When Micron and Anthropic optimise memory for LLM inference together, the cost and speed of AI inference in India drops. Every Indian AI product running on Anthropic infrastructure gets better as a result.</li>
         </ul>
-        <div class="src">Source: HDFC Sky Market Desk</div>
+        <div class="src">Source: Micron Investor Relations, StockTitan</div>
       </div>
       <div class="data-card">
-        <h4>🛢️ Oil heads for a sharp weekly drop despite lingering risk</h4>
+        <div class="data-tag dt-indigo">Semiconductor</div>
+        <h4>&#127482;&#127480; Micron is building America&rsquo;s biggest-ever new semiconductor fab in New York with Bechtel as construction partner</h4>
         <ul>
-          <li>Brent crude, near $80, is on track for an 8-10% weekly decline as the ceasefire holds — even as Iran introduces mandatory insurance requirements for ships transiting the Strait of Hormuz.</li>
-          <li><b>How it affects India:</b> A genuine, sustained price drop would meaningfully ease India's import bill and inflation pressure — but the new insurance requirement adds a fresh, smaller cost layer to shipping.</li>
+          <li>Micron selected Bechtel &mdash; the global engineering and construction giant &mdash; as its construction partner for a historic new semiconductor fabrication facility in Clay, New York. The fab is part of Micron&rsquo;s $100 billion US investment plan under the CHIPS Act and will produce DRAM at a scale that makes the US less dependent on South Korean and Taiwanese chip supply.</li>
+          <li><b>How it affects India:</b> America building domestic chip manufacturing changes the geopolitics of semiconductor supply. It reduces the concentration risk India described when only three companies globally made HBM. A more diverse chip supply geography is better for every country &mdash; including India &mdash; that depends on chips for its AI infrastructure ambitions.</li>
         </ul>
-        <div class="src">Source: Trading Economics Commodity Desk</div>
+        <div class="src">Source: Micron Investor Relations, June 10, 2026</div>
       </div>
       <div class="data-card">
-        <h4>🇺🇸 Google commits $15 billion to an AI hub in Visakhapatnam</h4>
+        <div class="data-tag dt-green">Defence Exports</div>
+        <h4>&#127462;&#127466; UAE is in talks to buy BrahMos missiles &mdash; India&rsquo;s defence exports are finding serious buyers</h4>
         <ul>
-          <li>Google's $15 billion, five-year plan for a large-scale AI hub in Visakhapatnam has moved into construction, executed through partnerships with AdaniConneX and Nxtra by Airtel.</li>
-          <li><b>How it affects India:</b> Global hyperscalers are now treating India as a primary AI infrastructure location, not just a market for AI services.</li>
+          <li>The United Arab Emirates is in active discussions to purchase BrahMos supersonic cruise missiles from India &mdash; the world&rsquo;s fastest anti-ship and land-attack cruise missile, jointly developed by India and Russia. This follows Philippines&rsquo; &#x20B9;3,000 crore BrahMos purchase in 2022 and Indonesia&rsquo;s deal in 2023.</li>
+          <li><b>How it affects India:</b> BrahMos exports to Gulf countries create a strategic partnership loop: India sells defence hardware, Gulf countries provide oil and sovereign wealth investment, and the relationship deepens beyond pure commerce. Each BrahMos sale is worth over $375 million &mdash; and the UAE deal could be significantly larger. India&rsquo;s defence exports crossed $21,000 crore in FY26, nearly quadrupling in three years.</li>
         </ul>
-        <div class="src">Source: Liquide Research Desk</div>
+        <div class="src">Source: Business Today, BrahMos Aerospace</div>
       </div>
       <div class="data-card">
-        <h4>⚖️ A global precedent: courts uphold platform blocking powers</h4>
+        <div class="data-tag dt-gold">Deeptech Diplomacy</div>
+        <h4>&#127470;&#127475;&#127467;&#127479; India and France just created a bilateral deeptech innovation corridor through iCreate and Hauts-de-France</h4>
         <ul>
-          <li>The Delhi High Court rejected Telegram's challenge to being blocked, calling it the "least restrictive measure" and affirming the Centre's power to direct blocking of messaging platforms.</li>
-          <li><b>How it affects India:</b> The ruling sets a legal precedent other countries may reference as they weigh their own platform-blocking powers — India increasingly shapes global tech-regulation conversations, not just follows them.</li>
+          <li>Deep-tech incubator iCreate signed an MoU with France&rsquo;s Hauts-de-France Regional Council at Bharat Innovates 2026 in Nice to establish the India-Hauts-de-France Bilateral Corridor for Deep Tech Innovation. The corridor facilitates startup collaboration, market access, pilot deployments and technology commercialisation between the two regions.</li>
+          <li><b>How it affects India:</b> India&rsquo;s deeptech startups gain access to France&rsquo;s robust aerospace, automotive, food-tech and advanced manufacturing sectors for pilot deployments. French deeptech companies get a structured pathway into India&rsquo;s large industrial base. These bilateral corridors create market access for Indian startups that previously required multi-year market-entry efforts.</li>
         </ul>
-        <div class="src">Source: Business Standard Legal Desk</div>
+        <div class="src">Source: Dailyhunt / YourStory, June 15, 2026</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 4: FINANCE -->
+<!-- S4 FINANCE -->
 <section id="s4">
   <div class="wrap">
     <div class="sec-head"><h2>Finance</h2></div>
-
-    <div class="story-grid quad">
-      <div class="story">
-        <div class="story-top"><span class="tag finance">Markets</span></div>
-        <h3>Five days, five gains — but a split market underneath</h3>
-        <p>The Sensex's fifth straight winning session was led by NTPC, HDFC Bank, Tata Motors and PSU banks, while Infosys, Tech Mahindra, TCS and HCL Tech posted the steepest declines.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Finance manager view</div><div class="val">Sector rotation is happening in real time — capital is moving from export-facing IT into domestic-facing financials and infra.</div></div>
-          <div class="box"><div class="lbl">Consumer impact</div><div class="val">Banking and infra-heavy mutual funds likely outperformed IT-heavy ones this week.</div></div>
-        </div>
-        <div class="story-src">Source: Trading Economics</div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-indigo">Buyback</div>
+        <h4>Bajaj Auto just bought back &#x20B9;15,000 crore of its own shares &mdash; what does a buyback actually mean for you?</h4>
+        <ul>
+          <li><b>What happened?</b> Bajaj Auto&rsquo;s board-approved share buyback has its record date on June 24. The company is buying back up to 60 crore shares (5.7% of paid-up capital) at &#x20B9;250 per share for a total of <b>&#x20B9;15,000 crore</b> through the tender offer process.</li>
+          <li><b>Finance manager view:</b> A buyback is a company using its own cash to buy back its shares from existing shareholders. It reduces the number of shares outstanding &mdash; which means each remaining share represents a larger slice of the company. If you hold Bajaj Auto shares, the buyback increases your proportional ownership without you having to do anything. Companies typically do buybacks when they believe their own stock is undervalued.</li>
+          <li><b>Consumer impact:</b> Bajaj Auto&rsquo;s decision to return &#x20B9;15,000 crore to shareholders rather than reinvest it signals management confidence in the business&rsquo;s existing direction. The company is essentially saying: we have enough cash and enough confidence in current operations that we do not need to retain this capital for new investments.</li>
+        </ul>
+        <div class="src">Source: Upstox, Dailyhunt / Upstox article</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag finance">Flows</span></div>
-        <h3>FIIs sell, DIIs buy — the tug-of-war continues</h3>
-        <p>Foreign Institutional Investors net sold ₹1,025 crore while Domestic Institutional Investors net bought ₹3,517 crore in a single session, continuing a now-familiar pattern.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Finance manager view</div><div class="val">Domestic flows are becoming structurally important enough to offset foreign selling — a meaningful shift from a decade ago.</div></div>
-          <div class="box"><div class="lbl">Consumer impact</div><div class="val">Your SIP contributions are part of the very flow now stabilising the market.</div></div>
-        </div>
-        <div class="story-src">Source: Trendlyne</div>
+      <div class="data-card">
+        <div class="data-tag dt-gold">Fundraising</div>
+        <h4>YES Bank&rsquo;s board meets on June 29 to decide on fresh equity issuance &mdash; and that is a big deal</h4>
+        <ul>
+          <li><b>What happened?</b> YES Bank announced its board will meet on June 29 to consider a proposal for raising funds through equity securities &mdash; via private placement, preferential issue or another method. This is a formal step in YES Bank&rsquo;s ongoing reconstruction and capital rebuilding journey after its near-collapse and RBI-led rescue in 2020.</li>
+          <li><b>Finance manager view:</b> YES Bank&rsquo;s fundraising story is a case study in how banks rebuild. After the 2020 reconstruction, the bank needed new capital, new management and new governance simultaneously. Each equity raise is both a capital infusion and a confidence signal to depositors and borrowers that the bank is recovering. The structure (private placement vs. rights issue) will reveal who the new investors are and at what valuation they are coming in.</li>
+          <li><b>Consumer impact:</b> If you have a YES Bank account or fixed deposit, a successful equity raise improves the bank&rsquo;s capital adequacy ratio and reduces the probability of another restructuring event. It is good news for retail depositors.</li>
+        </ul>
+        <div class="src">Source: Upstox, YES Bank regulatory filing</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag finance">Block Deals</span></div>
-        <h3>A ₹275 crore promoter sale meets a ₹557 crore promoter buy</h3>
-        <p>Shaily Engineering's promoter sold 10.4 lakh shares worth ₹275.6 crore in a bulk deal, while P&G Home Products' promoter bought 6.2 lakh shares worth ₹557 crore through a block deal — on the same trading day.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Finance manager view</div><div class="val">Promoter trades send strong signals — but always check whether it's a planned diversification or a genuine confidence shift before reacting.</div></div>
-          <div class="box"><div class="lbl">Consumer impact</div><div class="val">None directly, but it shows real money moving on conviction even in a choppy week.</div></div>
-        </div>
-        <div class="story-src">Source: Trendlyne Markets Today</div>
+      <div class="data-card">
+        <div class="data-tag dt-teal">Secondary Exit</div>
+        <h4>Nexus Venture Partners sold &#x20B9;208 crore of Delhivery shares &mdash; and that tells you something about PE exit strategies</h4>
+        <ul>
+          <li><b>What happened?</b> Nexus Venture Partners sold over 43 lakh shares of Delhivery (India&rsquo;s largest logistics platform) for &#x20B9;208 crore through an open market transaction. Nexus Ventures III Ltd had held a 4.48% stake in the company. This is a gradual institutional exit &mdash; selling in tranches over time rather than in one large block.</li>
+          <li><b>Finance manager view:</b> This is how professional PE exits work in practice. Large stakeholders do not sell everything at once &mdash; it would crash the stock price. They sell in manageable tranches over months, balancing the need for liquidity against the market impact of each sale. For retail investors, tracking institutional exit patterns is a useful signal of how insiders view the stock&rsquo;s near-term ceiling.</li>
+          <li><b>Consumer impact:</b> Nexus Venture Partners selling is not a statement about Delhivery&rsquo;s business quality &mdash; it is about a fund returning capital to its own investors after a successful investment. Delhivery&rsquo;s operations are separate from who holds its shares.</li>
+        </ul>
+        <div class="src">Source: Upstox, Delhivery exchange filing</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag finance">Wealth Management</span></div>
-        <h3>Mirae Asset Sharekhan launches a unified digital research centre</h3>
-        <p>Mirae Asset Sharekhan has launched a Unified Digital Research Centre in India, consolidating its equity research and advisory capabilities into a single digital platform.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Finance manager view</div><div class="val">Brokerages are racing to digitise research delivery as retail investors increasingly expect real-time, app-based insights.</div></div>
-          <div class="box"><div class="lbl">Consumer impact</div><div class="val">Retail investors get faster, more accessible research — but should still verify advice independently.</div></div>
-        </div>
-        <div class="story-src">Source: BusinessFortNight</div>
+      <div class="data-card">
+        <div class="data-tag dt-green">Tech M&A</div>
+        <h4>Rashi Peripherals is acquiring VDA Infosolutions for &#x20B9;5.5 billion &mdash; distribution meets deployment in enterprise tech</h4>
+        <ul>
+          <li><b>What happened?</b> Rashi Peripherals, a listed Indian distributor of IT products (components, peripherals, enterprise hardware), announced the acquisition of a strategic stake in VDA Infosolutions &mdash; valued at &#x20B9;8.5 billion enterprise valuation, equity at &#x20B9;5.5 billion &mdash; to expand into enterprise technology deployment and digital infrastructure services.</li>
+          <li><b>Finance manager view:</b> Rashi is making a classic distribution-to-services move: they currently sell enterprise hardware but do not manage its installation and operation. By acquiring VDA, they now own both the product sale and the service delivery. This is vertical integration &mdash; capturing more margin from the same customer relationship instead of passing the service revenue to a third party.</li>
+          <li><b>Consumer impact:</b> Mid-size Indian companies buying enterprise tech will increasingly deal with integrated vendors who handle both the hardware supply and the deployment, support and management. This consolidation improves accountability but reduces the competitive pressure that kept prices low when distribution and deployment were separate.</li>
+        </ul>
+        <div class="src">Source: Upstox, Rashi Peripherals regulatory filing</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 5: MARKETING -->
+<!-- S5 MARKETING -->
 <section id="s5">
   <div class="wrap">
     <div class="sec-head"><h2>Marketing</h2></div>
-
-    <div class="story-grid quad">
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Social Commerce</span></div>
-        <h3>Flipkart and Meta blur the line between scrolling and shopping</h3>
-        <p>The new Flipkart-Meta affiliate programme uses Facebook product tags so creators earn directly when their content drives a purchase — formally merging content and checkout into one flow.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">What marketers learn</div><div class="val">Attribution and conversion can now happen inside a single post — campaign measurement needs to follow the customer's actual path, not assume separate discovery and purchase steps.</div></div>
-          <div class="box"><div class="lbl">Consumer connection</div><div class="val">Shoppers can buy directly from a creator's post without leaving the app.</div></div>
-        </div>
-        <div class="story-src">Source: News18 Business / Meta India</div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-teal">B2B Partnerships</div>
+        <h4>Wipro and Palo Alto Networks are selling AI-powered cybersecurity as a managed service &mdash; and the framing tells you everything</h4>
+        <ul>
+          <li><b>What happened?</b> Wipro expanded its partnership with Palo Alto Networks &mdash; the global AI cybersecurity leader &mdash; to offer AI-driven Managed Detection and Response (MDR) services. This means Wipro&rsquo;s clients do not just get cybersecurity software; they get an ongoing service where Wipro&rsquo;s analysts, powered by Palo Alto&rsquo;s AI, monitor and respond to threats continuously.</li>
+          <li><b>What marketers learn:</b> Wipro is repositioning from &ldquo;IT services vendor&rdquo; to &ldquo;AI security partner.&rdquo; The shift from product-sale to managed-service changes the entire revenue model: instead of one-time licences, you have annual recurring contracts. Customers who would not budget &#x20B9;5 crore for a cybersecurity system will budget &#x20B9;1 crore per year for a managed service. Same ultimate value, completely different budget conversation.</li>
+          <li><b>Consumer connection:</b> Every large Indian company is Wipro&rsquo;s potential cybersecurity customer. As cyber-attacks on Indian businesses increase, the managed service model becomes the way most companies protect themselves &mdash; because they do not have the internal talent to build it themselves.</li>
+        </ul>
+        <div class="src">Source: Upstox, Wipro press release</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Brand Campaigns</span></div>
-        <h3>India's biggest brands get recognised for cultural storytelling</h3>
-        <p>The Storyboard18 Creativity Awards 2026 honoured campaigns from Swiggy, Nestlé, HDFC, Flipkart and Puma for blending storytelling, cultural relevance and measurable business impact.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">What marketers learn</div><div class="val">Award-winning campaigns increasingly combine emotional storytelling with hard performance metrics — creativity alone no longer wins.</div></div>
-          <div class="box"><div class="lbl">Consumer connection</div><div class="val">Expect more culturally rooted, India-specific brand storytelling rather than adapted global templates.</div></div>
-        </div>
-        <div class="story-src">Source: Storyboard18</div>
+      <div class="data-card">
+        <div class="data-tag dt-indigo">Narrative Strategy</div>
+        <h4>Nandan Nilekani called Infosys &ldquo;more relevant than ever.&rdquo; Here is why that specific framing was chosen &mdash; and what it teaches about B2B storytelling.</h4>
+        <ul>
+          <li><b>What happened?</b> In response to JPMorgan&rsquo;s same-day downgrade of Indian IT, Infosys Chairman Nandan Nilekani publicly said AI will &ldquo;amplify companies moving with purpose and speed&rdquo; and positioned Infosys as eyeing $300-400 billion in AI opportunities by 2030. The statement was a deliberate counter-narrative &mdash; not a denial of the near-term challenge, but a reframe of the long-term opportunity.</li>
+          <li><b>What marketers learn:</b> &ldquo;More relevant than ever&rdquo; is a specific defensive framing used when a market leader is being questioned. It does not argue with the concern &mdash; it restates the strategic value proposition at a longer time horizon. For B2B brands under competitive or macro pressure, this is the playbook: acknowledge the storm, restate the structural advantage, give a specific number for the long-term opportunity.</li>
+          <li><b>Consumer connection:</b> Every brand that has ever been disrupted (Kodak, Nokia, Blockbuster) failed because it reacted to threat with a defensive claim rather than a genuine strategic pivot. Nilekani&rsquo;s framing only works if Infosys actually executes on the AI strategy. The narrative buys time; the execution is what delivers.</li>
+        </ul>
+        <div class="src">Source: Upstox, Trading Economics, HDFCSky</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Creator Economy</span></div>
-        <h3>Influencer agencies become the new power brokers of ad spend</h3>
-        <p>Agencies like MonkE, Chtrbox, Creator18 and CAN are reshaping how corporate India allocates advertising budgets, as the creator economy moves from a marketing add-on to a primary spend channel.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">What marketers learn</div><div class="val">Influencer marketing agencies now sit where media-buying agencies used to — controlling significant ad-budget decisions.</div></div>
-          <div class="box"><div class="lbl">Consumer connection</div><div class="val">More of the content you see is professionally brokered, even when it looks personal and organic.</div></div>
-        </div>
-        <div class="story-src">Source: Storyboard18 Creator Economy Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-gold">Consumer Trends</div>
+        <h4>India&rsquo;s weak monsoon is a disaster for farmers &mdash; and a quiet windfall for ice cream, ACs, sunscreen and cold drinks brands</h4>
+        <ul>
+          <li><b>What happened?</b> A hot, dry summer driven by El Ni&ntilde;o and a deficient monsoon creates a specific category of FMCG winners: ice cream and dairy drinks (Dodla Dairy, Heritage Foods), cooling hair oils (Emami, Marico, Bajaj Consumer), sunscreen (Honasa, HUL, Dabur), carbonated soft drinks (Varun Beverages, Tata Consumer) and air conditioners and refrigerators all benefit from extended heat and reduced rainfall.</li>
+          <li><b>What marketers learn:</b> Climate seasonality is a planned marketing variable, not an unpredictable event. FMCG brands with cooling or refreshment products know that an El Ni&ntilde;o year is their version of a boom year. Advertising spend, distribution push and shelf space negotiations for these categories need to happen months before the heat peaks &mdash; not after it arrives.</li>
+          <li><b>Consumer connection:</b> Notice how Frooti, Tropicana and Sprite advertising becomes significantly more aggressive from March onwards in a hot year. That is not coincidence &mdash; it is a planned weather-correlated marketing strategy that these companies have been executing for decades.</li>
+        </ul>
+        <div class="src">Source: Wright Research, Outlook Business</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag tech">Brand Partnerships</span></div>
-        <h3>Meta deepens its six-year bet on Reliance — this time on infrastructure</h3>
-        <p>Meta's relationship with Reliance has evolved from a $5.7 billion stake in Jio Platforms in 2020, to a $100 million enterprise-AI joint venture, to now a 168MW data centre partnership — a steadily deepening strategic alliance.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">What marketers learn</div><div class="val">Long-term strategic partnerships compound — each new deal builds on accumulated trust from the last one, rather than starting fresh.</div></div>
-          <div class="box"><div class="lbl">Consumer connection</div><div class="val">The apps and platforms you use daily (WhatsApp, Jio, Instagram) are increasingly built on shared, interconnected infrastructure.</div></div>
-        </div>
-        <div class="story-src">Source: TechCrunch, RIL Investor Relations</div>
+      <div class="data-card">
+        <div class="data-tag dt-green">Open Finance</div>
+        <h4>RBI recognised Sahamati as the SRO for India&rsquo;s Account Aggregator ecosystem &mdash; and it quietly changes how fintech markets to you</h4>
+        <ul>
+          <li><b>What happened?</b> The Reserve Bank of India officially recognised Sahamati Foundation as the Self-Regulatory Organisation (SRO) for India&rsquo;s Account Aggregator (AA) ecosystem. The AA framework allows users to share their financial data (bank statements, insurance, investments) with service providers in a consented, standardised, digital way.</li>
+          <li><b>What marketers learn:</b> Account Aggregators change the entire customer acquisition and personalisation model for financial services marketing. Instead of asking customers to upload 6 months of bank statements, a lender using the AA framework can get consented digital access in seconds. The consumer wins (less paperwork), the lender wins (better data), and the fintech that builds the best consent-and-personalise experience wins the customer relationship.</li>
+          <li><b>Consumer connection:</b> You have probably already consented to an AA without knowing it &mdash; when a loan app said &ldquo;share your bank statement digitally&rdquo; and showed you a list of accounts to select from. That is Account Aggregation. Sahamati&rsquo;s SRO status means this entire ecosystem now has formal regulatory governance and audit standards.</li>
+        </ul>
+        <div class="src">Source: Business Standard (RBI News Roundup), June 2026</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 6: OPS -->
+<!-- S6 OPS -->
 <section id="s6">
   <div class="wrap">
-    <div class="sec-head"><h2>Operations & Supply Chain</h2></div>
-
-    <div class="story-grid quad">
-      <div class="story">
-        <div class="story-top"><span class="tag tech">Data Centre Build</span></div>
-        <h3>Reliance breaks ground on a 168MW AI facility — cooled by seawater</h3>
-        <p>Reliance will handle the entire lifecycle of the new Jamnagar AI data centre — design, construction, utilities and renewable power — with Meta leasing capacity once it's ready in about two years.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Operational implication</div><div class="val">Using desalinated seawater for cooling sidesteps a major operational risk: competing with local communities for freshwater.</div></div>
-          <div class="box"><div class="lbl">Watch</div><div class="val">Whether the 2-year construction timeline holds, given the scale and novelty of seawater cooling at this size.</div></div>
-        </div>
-        <div class="story-src">Source: TechCrunch</div>
+    <div class="sec-head"><h2>Operations &amp; Supply Chain</h2></div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-red">Agri Logistics</div>
+        <h4>A 43% monsoon deficit does not just hurt crops &mdash; it disrupts the entire agricultural supply chain beneath them</h4>
+        <ul>
+          <li><b>What happened?</b> A significant monsoon deficit affects India&rsquo;s agricultural supply chain at multiple layers simultaneously: delayed sowing shifts procurement timelines, reduced crop volumes affect mandis and warehousing utilisation, farmer cash flows tighten reducing input purchases, and transport patterns shift as crop geography changes across deficit and surplus districts.</li>
+          <li><b>Operational implication:</b> For FMCG companies sourcing ingredients directly from farmers, an uneven monsoon creates procurement uncertainty. Companies with integrated farm-to-factory supply chains (like ITC or Nestle) are better insulated than those buying spot from mandis. This is the operational case for farm-level partnerships &mdash; supply chain resilience, not just CSR.</li>
+          <li><b>Watch:</b> Whether the government&rsquo;s district-level contingency plans (recommending shift to shorter-duration crops) are adopted at scale by farmers. If sowing patterns shift successfully, the total damage from the deficit can be partially contained.</li>
+        </ul>
+        <div class="src">Source: Policy Circle, Outlook India, Wright Research</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag tech">AI Infrastructure</span></div>
-        <h3>Google's $15B Vizag AI hub moves from plan to construction</h3>
-        <p>Google's five-year, $15 billion AI hub in Visakhapatnam has entered construction, executed in partnership with AdaniConneX and Nxtra by Airtel rather than built entirely in-house.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Operational implication</div><div class="val">Even hyperscalers are choosing local infrastructure partners over solo builds — a sign of how specialised data-centre construction has become.</div></div>
-          <div class="box"><div class="lbl">Watch</div><div class="val">Power-grid and land-acquisition readiness in Andhra Pradesh as construction scales up.</div></div>
-        </div>
-        <div class="story-src">Source: Liquide Research Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-green">Renewable Energy</div>
+        <h4>Solarium Green Energy just won a &#x20B9;186.52 crore solar EPC contract in Maharashtra &mdash; renewable supply chain at work</h4>
+        <ul>
+          <li><b>What happened?</b> Solarium Green Energy received a Letter of Award from MAHAGENCO to execute end-to-end engineering, procurement and construction (EPC) works for a 50 MW AC / 65 MW DC solar PV power project in Maharashtra. The contract includes three years of operation and maintenance. The project expands Solarium&rsquo;s portfolio as India accelerates solar capacity addition.</li>
+          <li><b>Operational implication:</b> A 50 MW solar EPC contract requires synchronised procurement of solar panels (mostly imported from China or increasingly domestic), inverters, cabling, mounting structures, and civil construction materials. It is a complex multi-vendor supply chain executed under a fixed completion timeline. For companies studying B2B renewable energy operations, this is a textbook supply chain management project at meaningful scale.</li>
+          <li><b>Watch:</b> India&rsquo;s solar panel manufacturing capacity relative to its installation targets. Domestic manufacturing under PLI is growing but still below the pace of project additions, meaning panel supply chains remain partially import-dependent.</li>
+        </ul>
+        <div class="src">Source: Upstox, Solarium Green Energy regulatory filing</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag policy">Trade Logistics</span></div>
-        <h3>Government launches a digital Land Port Management System</h3>
-        <p>A new Land Port Management System was launched to digitise and speed up processing at India's land border trade points, reducing manual paperwork and clearance time.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Operational implication</div><div class="val">Faster border clearance directly cuts working-capital lock-up for businesses trading with neighbouring countries.</div></div>
-          <div class="box"><div class="lbl">Watch</div><div class="val">Adoption speed among smaller traders who may lack digital infrastructure at border points.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Policy Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-gold">Rural Demand</div>
+        <h4>Tractor and two-wheeler sales are India&rsquo;s most reliable monsoon indicators &mdash; here is how to read them</h4>
+        <ul>
+          <li><b>What happened?</b> May 2026 retail data showed growth across tractors, passenger vehicles and two-wheelers. But analysts are now watching these categories closely given the 43% monsoon deficit, because tractor demand responds directly to farm confidence and kharif income expectations. Two-wheelers are even more sensitive &mdash; they are the first durable purchase for many rural households.</li>
+          <li><b>Operational implication:</b> For companies like Mahindra (tractors), Hero MotoCorp and Bajaj Auto (two-wheelers), monsoon data is a demand forecasting input that precedes actual sales data by 2-3 months. Operations teams at these companies are already adjusting production plans based on current rainfall data &mdash; the same way a farmer adjusts sowing plans based on IMD forecasts.</li>
+          <li><b>Watch:</b> June and July retail sales data for tractors and two-wheelers. These will be the first hard data points confirming whether the monsoon deficit is already affecting rural purchasing decisions or whether the deficit&rsquo;s impact is being delayed by crop insurance and government support.</li>
+        </ul>
+        <div class="src">Source: Policy Circle, Kotak Neo Insights, Wright Research</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Proptech</span></div>
-        <h3>MyGate raises ₹225 crore to digitise housing society operations</h3>
-        <p>Housing-society management platform MyGate raised ₹225 crore from Dharana Capital to scale its security, billing and visitor-management infrastructure across residential complexes.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Operational implication</div><div class="val">Even "boring" operational categories like gated-community management are attracting serious capital as urban housing scales up.</div></div>
-          <div class="box"><div class="lbl">Watch</div><div class="val">Whether MyGate expands into adjacent services like utility billing and local commerce within societies.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Startup Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-teal">Edible Oils</div>
+        <h4>Soybean sowing delays are deepening India&rsquo;s edible oil import dependency &mdash; and vegetable oil prices will feel it</h4>
+        <ul>
+          <li><b>What happened?</b> India produces 13-14 million tonnes of soybean annually, primarily in Madhya Pradesh and Maharashtra. Sowing is currently lagging below normal due to inadequate pre-monsoon and early-monsoon rains. The crop is critical both for edible oil (extracted from the seed) and high-protein meal (used in poultry and aquaculture feed).</li>
+          <li><b>Operational implication:</b> A domestic soybean shortfall triggers a cascading supply chain effect: India imports more palm oil from Indonesia and Malaysia, increasing dollar outgo; cooking oil manufacturers face higher raw material costs; poultry and fish feed prices rise, pushing up protein food costs; and FMCG manufacturers using vegetable oil in products face margin pressure from both the oil and the food consumer simultaneously.</li>
+          <li><b>Watch:</b> Malaysia and Indonesia palm oil inventory levels &mdash; these are the immediate substitute for Indian soybean oil. If global palm oil supply is also tight, the import cost pressure is compounded. If inventory is comfortable, India can bridge the domestic shortfall at manageable cost.</li>
+        </ul>
+        <div class="src">Source: Outlook Business, Wright Research, Policy Circle</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 7: HR -->
+<!-- S7 HR -->
 <section id="s7">
   <div class="wrap">
-    <div class="sec-head"><h2>HR & Leadership</h2></div>
-
-    <div class="story-grid quad">
-      <div class="story">
-        <div class="story-top"><span class="tag policy">GCC Hiring</span></div>
-        <h3>GCCs add 22,000 jobs in a single month — even as IT layoffs continue</h3>
-        <p>India's Global Capability Centres added a net ~22,000 roles in May 2026 alone, concentrated in platform engineering, AI/ML platforms, security and data engineering, even as IT services firms cut headcount.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future manager lesson</div><div class="val">The job market isn't shrinking — it's relocating, from services-model IT firms toward in-house global capability centres.</div></div>
-          <div class="box"><div class="lbl">Career implication</div><div class="val">Build skills aligned to platform engineering and AI/ML if you're targeting the GCC hiring wave specifically.</div></div>
-        </div>
-        <div class="story-src">Source: OwnYourCareer Labor Market Intelligence</div>
+    <div class="sec-head"><h2>HR &amp; Leadership</h2></div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-red">Career Pressure</div>
+        <h4>Indian IT faces two simultaneous truths: JPMorgan&rsquo;s near-term pressure AND Nilekani&rsquo;s long-term opportunity. How do you plan a career when both are true?</h4>
+        <ul>
+          <li><b>What happened?</b> On the same day, JPMorgan downgraded HCL Tech, Wipro and Tata Tech (signalling near-term growth pressure) and Nandan Nilekani positioned Infosys as eyeing $300-400B in AI opportunity by 2030 (signalling long-term growth potential). For someone choosing an IT career or evaluating an IT job offer, both statements are simultaneously true and useful.</li>
+          <li><b>Future manager lesson:</b> When your sector faces near-term pressure and long-term opportunity simultaneously, the career strategy is to optimise for skill-building during the pressure phase and position for the opportunity phase. The IT engineers who get retrained in AI during the current slowdown will be the ones who capture the $300B opportunity Nilekani is describing.</li>
+          <li><b>Career implication:</b> A JPMorgan downgrade of IT does not mean IT careers are over. It means IT careers are changing. The question to ask is: which specific IT skills are being disrupted (repetitive code writing, manual testing, basic analytics) and which are being amplified (AI integration, system architecture, cybersecurity, domain-specific AI applications)?</li>
+        </ul>
+        <div class="src">Source: Upstox, Trading Economics, HDFCSky</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag policy">Geography Shift</span></div>
-        <h3>Tier-2 cities are quietly out-hiring Bengaluru</h3>
-        <p>Tech hiring in Coimbatore, Indore, Ahmedabad and Chandigarh grew 18% year-on-year, while hiring in Bengaluru and Pune stayed flat over the same period.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future manager lesson</div><div class="val">Talent and opportunity are decentralising — career strategy shouldn't assume metro cities are automatically the best bet anymore.</div></div>
-          <div class="box"><div class="lbl">Career implication</div><div class="val">Tier-2 city roles may offer faster growth and lower competition for the same skill set right now.</div></div>
-        </div>
-        <div class="story-src">Source: OwnYourCareer Labor Market Intelligence</div>
+      <div class="data-card">
+        <div class="data-tag dt-teal">Climate Careers</div>
+        <h4>A weak monsoon year creates a specific wave of hiring &mdash; here are the roles that drought conditions directly activate</h4>
+        <ul>
+          <li><b>What happened?</b> India&rsquo;s 43% monsoon deficit is not just an agriculture story. It activates demand for specific professional roles: water resource management engineers, irrigation infrastructure planners, climate risk analysts for banks and insurers, agricultural extension officers and commodity trading analysts who specialise in Indian crop markets.</li>
+          <li><b>Future manager lesson:</b> Climate volatility is not a risk that disappears &mdash; it is a permanent structural feature of India&rsquo;s economy going forward. The professional who builds expertise in climate risk analysis, agricultural finance or water management is building skills that will be in high demand as El Ni&ntilde;o cycles become more frequent and Indian policymakers scramble for solutions.</li>
+          <li><b>Career implication:</b> The intersection of finance and climate &mdash; specifically agricultural commodity risk, weather derivatives and climate insurance &mdash; is one of the most under-populated but high-demand intersections in Indian finance. If you have agricultural background + finance interest, this is a gap worth filling deliberately.</li>
+        </ul>
+        <div class="src">Source: IMD, Policy Circle, Wright Research</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag tech">Automation Impact</span></div>
-        <h3>Mid-career engineers are the most exposed to AI-coding-tool adoption</h3>
-        <p>Job losses are concentrated at the 6-10 year experience band, where AI coding tools are increasingly replacing maintenance and modernisation work that mid-tier engineers traditionally handled.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future manager lesson</div><div class="val">Mid-career professionals face the sharpest disruption — early-career and senior-strategic roles are comparatively more insulated for now.</div></div>
-          <div class="box"><div class="lbl">Career implication</div><div class="val">If you're 6-10 years into an IT career, actively moving toward architecture or AI-oversight roles reduces exposure.</div></div>
-        </div>
-        <div class="story-src">Source: OwnYourCareer Labor Market Intelligence</div>
+      <div class="data-card">
+        <div class="data-tag dt-gold">Central Banking</div>
+        <h4>The RBI Deputy Governor&rsquo;s tenure was extended 2 years &mdash; and central bank leadership continuity matters more than it looks</h4>
+        <ul>
+          <li><b>What happened?</b> The Central Government extended the tenure of RBI Deputy Governor Swaminathan J. by two years from June 26, 2026. As Deputy Governor overseeing supervision and regulation, Swaminathan has been central to RBI&rsquo;s enforcement actions against banks, NBFCs and payment companies over the past two years.</li>
+          <li><b>Future manager lesson:</b> Central bank leadership continuity is a governance signal that markets value highly. When a regulator with institutional knowledge is retained through a period of complexity &mdash; El Ni&ntilde;o risk, global rate uncertainty, IT sector stress &mdash; it signals that the government wants continuity in supervisory standards rather than a reset. For regulated businesses (banks, fintechs, NBFCs), understanding who runs the supervision function matters as much as understanding the policy rate.</li>
+          <li><b>Career implication:</b> Regulatory careers (RBI, SEBI, IRDAI, competition law) are among the most intellectually demanding and structurally secure in India&rsquo;s financial ecosystem. The complexity of India&rsquo;s regulatory environment is only growing &mdash; building regulatory expertise opens doors in both government and the compliance functions of private institutions.</li>
+        </ul>
+        <div class="src">Source: Business Standard (RBI News Roundup)</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag policy">Industry Size</span></div>
-        <h3>Despite headline layoffs, Indian IT's total workforce actually grew</h3>
-        <p>Nasscom data shows the overall Indian IT industry added 1.4 lakh employees to reach 59 lakh workers in 2026 — even as individual companies announced visible layoffs.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future manager lesson</div><div class="val">Aggregate industry data and individual company headlines can tell very different stories — always check both before drawing conclusions.</div></div>
-          <div class="box"><div class="lbl">Career implication</div><div class="val">The sector isn't disappearing — it's reshaping. Position yourself for where it's growing, not where it's shrinking.</div></div>
-        </div>
-        <div class="story-src">Source: Nasscom, via LayoffTrends</div>
+      <div class="data-card">
+        <div class="data-tag dt-green">Wealth Management</div>
+        <h4>Trackk is building an investing platform for younger Indians &mdash; and it tells you a lot about how the next generation manages money</h4>
+        <ul>
+          <li><b>What happened?</b> Mumbai-based Trackk is expanding its investing platform and product offerings, targeting younger Indians who are increasingly entering financial markets for the first time through mobile-first platforms. Trackk focuses on investment tracking, portfolio management and financial goal-setting for users aged 18-35.</li>
+          <li><b>Future manager lesson:</b> The democratisation of investing &mdash; where a 22-year-old college student in Kanpur can invest in US stocks, Indian ETFs and digital gold from a single app &mdash; is one of the most structurally important shifts in India&rsquo;s financial ecosystem. Wealth management as a career is expanding from &ldquo;managing the wealth of rich people&rdquo; to &ldquo;guiding the financial decisions of a massive new investing class.&rdquo;</li>
+          <li><b>Career implication:</b> If you are interested in wealth management, the most interesting space is not traditional private banking (high minimum wealth, relationship-heavy) but mass affluent and emerging investor segments where technology, content and community are creating new distribution and advisory models that did not exist five years ago.</li>
+        </ul>
+        <div class="src">Source: Business Standard (Startups Desk)</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 8: TECH/AI -->
+<!-- S8 TECH -->
 <section id="s8">
   <div class="wrap">
-    <div class="sec-head"><h2>Technology & AI</h2></div>
-
-    <div class="story-grid quad">
-      <div class="story">
-        <div class="story-top"><span class="tag tech">Sovereign AI</span></div>
-        <h3>Sarvam AI's $234M raise bets on India-first foundation models</h3>
-        <p>Sarvam AI's Series B — the week's largest Indian funding round — backs its push to build foundation models native to Indian languages, rather than retrofitted from Western models.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future jobs</div><div class="val">Demand grows for India-specific NLP researchers, linguists-turned-engineers, and multilingual AI evaluators.</div></div>
-          <div class="box"><div class="lbl">Business opportunity</div><div class="val">Sectors like governance, education and rural fintech need AI that genuinely understands Indian languages — a clear gap Sarvam is targeting.</div></div>
-        </div>
-        <div class="story-src">Source: Inc42 Weekly Funding Tracker</div>
+    <div class="sec-head"><h2>Technology &amp; AI</h2></div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-teal">AI Video</div>
+        <h4>TrueFan AI raised $10 million to build an enterprise video generation platform powered by AI avatars</h4>
+        <ul>
+          <li><b>What happened?</b> TrueFan AI raised $10 million to expand globally and scale its enterprise video-generation platform. The platform uses AI avatars and automation to generate professional-quality videos at scale &mdash; enabling enterprises to produce product demos, training content, marketing videos and customer communication in dozens of languages without traditional video production costs.</li>
+          <li><b>Future jobs:</b> AI video generation creates a new role category: AI content director &mdash; someone who can design video scripts, manage AI avatar consistency, quality-control AI-generated footage and integrate video output into enterprise workflows. This requires both creative skills and AI tool fluency. The traditional video production team of 10-15 shrinks to 2-3 AI-augmented directors.</li>
+          <li><b>Business opportunity:</b> Indian enterprises produce enormous volumes of training content, product documentation and customer communication that today requires expensive video production. At scale, AI video generation reduces cost by 80-90% while increasing language coverage. Any Indian company with multilingual customer bases (which is most large companies) is a potential TrueFan enterprise client.</li>
+        </ul>
+        <div class="src">Source: Business Standard (Startups Desk)</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag tech">AI Coding Tools</span></div>
-        <h3>Cursor, Claude Code and Devin are quietly replacing maintenance work</h3>
-        <p>AI coding assistants are increasingly handling the repetitive maintenance and modernisation workloads that used to occupy large teams of mid-tier engineers in Indian IT services.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future jobs</div><div class="val">Demand shifts toward engineers who can supervise, prompt and validate AI-generated code rather than write routine code themselves.</div></div>
-          <div class="box"><div class="lbl">Business opportunity</div><div class="val">Firms that retrain their maintenance workforce toward AI-oversight roles early will retain talent more cheaply than those who don't.</div></div>
-        </div>
-        <div class="story-src">Source: OwnYourCareer Labor Market Intelligence</div>
+      <div class="data-card">
+        <div class="data-tag dt-gold">Industrial AI</div>
+        <h4>AutoVRse raised $2.4 million to bring AI-powered transformation to Indian factories and warehouses</h4>
+        <ul>
+          <li><b>What happened?</b> AutoVRse raised $2.4 million co-led by Singularity AMC&rsquo;s Large Value Fund III and Early Opportunities Fund, alongside existing investor Lumikai, to scale its industrial AI transformation platform. The company uses AI, computer vision and spatial computing to digitise factory floors &mdash; enabling real-time monitoring, predictive maintenance and quality control without replacing human workers.</li>
+          <li><b>Future jobs:</b> Industrial AI creates demand for a hybrid professional: someone with manufacturing process knowledge AND the ability to deploy and maintain computer vision and IoT systems. This &ldquo;industrial AI engineer&rdquo; profile is almost non-existent in India today &mdash; industrial engineers do not know AI, and AI engineers do not know factories. The person who bridges this gap is building a rare, high-value career.</li>
+          <li><b>Business opportunity:</b> India&rsquo;s manufacturing sector under PLI is expanding rapidly, but most Indian factories still operate on paper-based quality control and manual monitoring. AutoVRse&rsquo;s technology converts analogue factory operations to digital without shutting down production lines. The TAM is every PLI factory currently being built or planned.</li>
+        </ul>
+        <div class="src">Source: Dailyhunt / YourStory, June 15, 2026</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag tech">AI Corporate Race</span></div>
-        <h3>The AI industry's next battleground: public listings</h3>
-        <p>Major AI labs are reportedly preparing for eventual public listings, with projected revenue figures becoming as closely watched as model benchmarks in the race for AI leadership.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future jobs</div><div class="val">Expect rising demand for AI-focused investor relations, compliance and governance roles as labs prepare for public scrutiny.</div></div>
-          <div class="box"><div class="lbl">Business opportunity</div><div class="val">Once major AI labs go public, their disclosed financials will give the whole industry — including Indian AI startups — clearer benchmarking data.</div></div>
-        </div>
-        <div class="story-src">Source: LatestLY Technology Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-indigo">Agentic AI</div>
+        <h4>Zopper launched ZENOVA &mdash; India&rsquo;s first agentic bancassurance platform. What does &ldquo;agentic AI&rdquo; actually mean?</h4>
+        <ul>
+          <li><b>What happened?</b> Zopper launched ZENOVA, described as India&rsquo;s first agentic bancassurance operating layer. Bancassurance is the distribution of insurance products through bank branches. An &ldquo;agentic AI&rdquo; layer means the system can take actions autonomously &mdash; not just recommend products but actually complete tasks (filling forms, processing applications, triggering follow-ups) without a human initiating each step.</li>
+          <li><b>Future jobs:</b> Agentic AI systems require a new kind of oversight professional: an AI workflow auditor who monitors what the agent is doing, catches errors before they become customer issues, and ensures the agent stays within regulatory and ethical boundaries. This is not a technical role &mdash; it is a compliance and process management role that requires understanding of both insurance regulations and AI decision-making logic.</li>
+          <li><b>Business opportunity:</b> India has over 300 million bank account holders who have never been approached for insurance products because the cross-sell process is too manual and too expensive at that scale. Agentic AI makes personalised insurance outreach economically viable for the mass market for the first time.</li>
+        </ul>
+        <div class="src">Source: Tracxn, Online Media Cafe</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag tech">AI Infrastructure</span></div>
-        <h3>India becomes a top global magnet for AI infrastructure capital</h3>
-        <p>Google's $15B Vizag hub, Meta-Reliance's Jamnagar data centre, and ongoing Microsoft and AWS investments together signal that India is emerging as one of the world's top destinations for AI infrastructure spend, not just AI usage.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Future jobs</div><div class="val">Data centre operations, power engineering and AI infrastructure management roles are set to scale sharply over the next two years.</div></div>
-          <div class="box"><div class="lbl">Business opportunity</div><div class="val">Ancillary industries — cooling tech, renewable power, fibre connectivity — all benefit from this wave of hyperscaler investment.</div></div>
-        </div>
-        <div class="story-src">Source: Synthesis of TechCrunch, Liquide Research Desk coverage</div>
+      <div class="data-card">
+        <div class="data-tag dt-green">Open Finance</div>
+        <h4>Sahamati becoming the Account Aggregator SRO is India&rsquo;s &ldquo;UPI moment&rdquo; for financial data &mdash; here is what that means</h4>
+        <ul>
+          <li><b>What happened?</b> The RBI recognised Sahamati Foundation as the Self-Regulatory Organisation for India&rsquo;s Account Aggregator ecosystem &mdash; the digital infrastructure that allows users to share their financial data with consent. India&rsquo;s AA framework is now arguably the world&rsquo;s most sophisticated consent-based financial data-sharing system, covering banks, insurance, pension, securities and more.</li>
+          <li><b>Future jobs:</b> The AA ecosystem creates demand for privacy engineers, consent management system designers and API integration architects who understand both financial regulation and technical data-sharing standards. India&rsquo;s digital public infrastructure (UPI, AA, DigiLocker, ONDC) is creating a whole new category of specialised engineering roles that did not exist before 2020.</li>
+          <li><b>Business opportunity:</b> Every fintech that needs customer financial data &mdash; lenders, wealth managers, insurance companies, tax filing platforms &mdash; can now access it with customer consent in seconds through the AA network instead of asking customers to upload PDF bank statements. The AA ecosystem reduces onboarding friction across the entire financial services industry simultaneously.</li>
+        </ul>
+        <div class="src">Source: Business Standard (RBI Roundup, June 2026)</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 9: STARTUPS -->
+<!-- S9 STARTUPS -->
 <section id="s9">
   <div class="wrap">
     <div class="sec-head"><h2>Indian Startups</h2></div>
-
-    <div class="story-grid quad">
-      <div class="story">
-        <div class="story-top"><span class="tag finance">IPO Pipeline</span></div>
-        <h3>Razorpay files confidential IPO papers</h3>
-        <p>Payments major Razorpay has filed confidential pre-IPO papers, becoming one of the most closely watched names testing whether Indian fintech can still command big public-market valuations.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Lesson for founders</div><div class="val">Confidential filings let large fintechs gauge investor appetite quietly before committing to a public listing date.</div></div>
-          <div class="box"><div class="lbl">Implication</div><div class="val">A successful Razorpay listing could reopen the IPO window for other fintech unicorns watching from the sidelines.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Startup Desk</div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-teal">Voice AI</div>
+        <h4>Maya Research raised $1.9 million for a voice-first AI platform built for users who prefer talking over typing</h4>
+        <ul>
+          <li><b>What happened?</b> Maya Research raised $1.9 million led by South Park Commons. Founded in 2025 by BS Dheemanth Reddy and Bharath Kumar Kakumani, the startup is developing voice-first AI interfaces aimed at users who prefer voice interaction over text-based AI. Maya Research has achieved <b>440,000 model downloads on Hugging Face</b> and recorded <b>3 million app downloads</b> across India, Southeast Asia and the Middle East.</li>
+          <li><b>Lesson for founders:</b> Maya Research&rsquo;s model downloads on Hugging Face + app downloads represent two different distribution channels simultaneously &mdash; developer adoption and consumer adoption. Building in public (open models on Hugging Face) while also building a consumer product creates a flywheel: developers integrate your model into their products, generating distribution for your consumer app. This dual-channel approach is increasingly common in AI-native startups.</li>
+          <li><b>Implication:</b> India has 600 million smartphone users, but a large percentage still find text-based AI interfaces intimidating or inaccessible. Voice-first AI in Indian languages is not an edge product &mdash; it is the mainstream product for 300+ million users who are more comfortable speaking than typing in English.</li>
+        </ul>
+        <div class="src">Source: Dailyhunt / YourStory, June 15, 2026</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Proptech</span></div>
-        <h3>MyGate raises ₹225 crore for smarter housing societies</h3>
-        <p>Dharana Capital backed MyGate's ₹225 crore raise, aimed at scaling its security and management infrastructure across India's growing base of gated residential communities.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Lesson for founders</div><div class="val">Unglamorous, infrastructure-heavy categories can still attract serious capital if the unit economics and retention are strong.</div></div>
-          <div class="box"><div class="lbl">Implication</div><div class="val">Proptech-adjacent startups solving "boring" operational problems may face less competition than flashier consumer categories.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Startup Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-green">HealthTech</div>
+        <h4>Lumos Health just opened applications for its second healthtech accelerator cohort &mdash; and it is backed by HCG and Anthill Ventures</h4>
+        <ul>
+          <li><b>What happened?</b> Lumos Health Advisory opened applications for its second cohort of the healthcare speed-scaling programme (deadline June 25 &mdash; today). Founded by Anjali Ajaikumar and Prasad Vanga, the programme is backed by healthcare provider HCG and venture capital firm Anthill Ventures. Startups gain clinical trial support, real-world validation at HCG facilities, investor networks and commercialisation pathways.</li>
+          <li><b>Lesson for founders:</b> Lumos Health&rsquo;s model solves the single biggest problem in Indian healthtech: access to clinical infrastructure for validation. A health startup cannot fundraise without clinical evidence. But it cannot get clinical evidence without a hospital partner. Lumos bridges exactly this catch-22 by embedding startups inside HCG&rsquo;s clinical environment. If you are building in healthtech, applying to this accelerator is 10x more valuable than a cheque alone.</li>
+          <li><b>Implication:</b> India&rsquo;s healthtech ecosystem is maturing from &ldquo;telemedicine apps and pharmacy delivery&rdquo; to &ldquo;clinical decision support, diagnostic AI and care-pathway optimisation.&rdquo; The second wave requires clinical partnerships that first-wave healthtech startups lacked. Accelerators like Lumos are building that bridge.</li>
+        </ul>
+        <div class="src">Source: Dailyhunt / YourStory, June 15, 2026</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Babycare</span></div>
-        <h3>FirstCry-backed Swara Baby eyes a ₹1,000 crore IPO</h3>
-        <p>Swara Baby, a babycare startup backed by FirstCry, is reportedly preparing for a ₹1,000 crore IPO, signalling continued investor confidence in India's parenting and babycare retail category.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Lesson for founders</div><div class="val">Backing from an established player (FirstCry) can meaningfully de-risk a smaller startup's path toward a public listing.</div></div>
-          <div class="box"><div class="lbl">Implication</div><div class="val">India's parenting and babycare market continues to mature into a genuine public-market-ready category.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Startup Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-gold">Learning Economy</div>
+        <h4>Pint of View is turning Bengaluru&rsquo;s bars into sold-out academic lecture halls &mdash; and people are paying for it</h4>
+        <ul>
+          <li><b>What happened?</b> Bengaluru-based Pint of View hosts sold-out academic lectures in bars across India. The format: a professor or expert delivers a real lecture in a bar setting, tickets &#x20B9;500-1,500, audience drinks and learns simultaneously. The events routinely sell out. The model proves that curiosity does not end with college &mdash; and that people will pay meaningfully to learn in a social, informal environment.</li>
+          <li><b>Lesson for founders:</b> Pint of View identified a gap between two existing categories &mdash; bars (social but mindless) and education (meaningful but formal) &mdash; and created a new format that captures the benefits of both. The insight is not technical. It is social. When you reframe &ldquo;going to a lecture&rdquo; as &ldquo;going out with friends,&rdquo; you access an audience that would never enter a classroom but will happily attend a premium event.</li>
+          <li><b>Implication:</b> India&rsquo;s &ldquo;learn-as-you-live&rdquo; economy &mdash; podcasts, social learning events, community classes, bar lectures &mdash; is a growing category that sits between formal education and pure entertainment. Any founder thinking about education should ask: what version of our content could people consume in a social setting without feeling like they are in class?</li>
+        </ul>
+        <div class="src">Source: Dailyhunt / YourStory, June 15, 2026</div>
       </div>
-      <div class="story">
-        <div class="story-top"><span class="tag fmcg">Services / Events</span></div>
-        <h3>The Wedding Company raises $2.75M to scale wedding planning</h3>
-        <p>Founded in 2023, The Wedding Company raised $2.75 million in seed funding led by Wellingdon Advisors to expand its wedding planning and fulfilment services across India.</p>
-        <div class="story-foot">
-          <div class="box"><div class="lbl">Lesson for founders</div><div class="val">India's massive, fragmented wedding industry remains a largely under-tapped opportunity for organised, tech-enabled platforms.</div></div>
-          <div class="box"><div class="lbl">Implication</div><div class="val">Services-heavy, low-tech-seeming sectors can still support venture-style growth if execution and logistics are solved well.</div></div>
-        </div>
-        <div class="story-src">Source: Newskart Startup Desk</div>
+      <div class="data-card">
+        <div class="data-tag dt-indigo">Biotech</div>
+        <h4>BIRAC&rsquo;s multipronged approach is expanding India&rsquo;s biotech startup ecosystem &mdash; and it is built differently from software startup support</h4>
+        <ul>
+          <li><b>What happened?</b> The Biotechnology Industry Research Assistance Council (BIRAC)&rsquo;s multipronged approach &mdash; encompassing funding, incubation infrastructure, networks, and market access &mdash; has led to significant expansion of biotech startups in India. The model combines grant funding (not equity) with access to laboratory infrastructure that a startup cannot otherwise afford.</li>
+          <li><b>Lesson for founders:</b> Biotech startups cannot be funded the same way as software startups. They need lab infrastructure, PhD-level scientific talent, regulatory approval pathways and 5-10 year development cycles. BIRAC&rsquo;s model addresses all of these simultaneously through a government-backed structure. For founders in biotech, understanding BIRAC&rsquo;s funding instruments (BIRAC SEED Fund, BIG Grant, SPARSH) is as important as understanding VC term sheets.</li>
+          <li><b>Implication:</b> India&rsquo;s biotech startup count is growing, but the ecosystem remains thin relative to the opportunity. India&rsquo;s strengths in pharmaceutical manufacturing, generics and clinical trial capacity create a foundation that biotech startups can build on &mdash; if they can navigate the regulatory and capital complexity that pure-play software founders do not face.</li>
+        </ul>
+        <div class="src">Source: Dailyhunt / YourStory, June 15, 2026</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 10: CONNECTION MAP (Flowchart) -->
+<!-- S10 CONNECTION MAP -->
 <section id="s10">
   <div class="wrap">
     <div class="sec-head"><h2>The Connection Map</h2></div>
-
     <div class="cm-wrap">
-      <div class="cm-title">Three Chains, One Trading Session — Follow the Arrows</div>
-
+      <div class="cm-title">Three Structural Tensions Running Through Thursday &mdash; Follow the Logic</div>
       <div class="cm-chains">
         <div class="cm-chain">
-          <div class="cm-chain-label">Chain A — Geopolitics</div>
-          <div class="cm-node root">US-Iran sign an interim ceasefire</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">Oil-price fear eases sharply</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">Brent heads for an 8-10% weekly fall</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">Lower oil costs lift broad market sentiment</div>
+          <div class="cm-chain-label">Chain A &mdash; AI Confirmation</div>
+          <div class="cm-node root">Micron beats estimates by 23.8% &mdash; AI demand confirmed</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">Fear from Tuesday&rsquo;s crash was about uncertainty, not fundamentals</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">IT stocks recover; Indian AI infrastructure ambitions validated</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">The question is no longer &ldquo;is AI real?&rdquo; but &ldquo;who captures how much value?&rdquo;</div>
         </div>
-
         <div class="cm-chain">
-          <div class="cm-chain-label">Chain B — Monetary Policy</div>
-          <div class="cm-node root">US Fed signals a possible rate hike</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">Investors expect costlier capital for IT clients</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">Infosys, TCS, Tech Mahindra, HCL Tech fall</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">RBI separately raises its own inflation outlook</div>
+          <div class="cm-chain-label">Chain B &mdash; Climate Slow Burn</div>
+          <div class="cm-node root">Monsoon 43% below normal &mdash; first below-normal forecast in 11 years</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">Kharif sowing delayed, crop mix shifting, farmer income uncertain</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">Food inflation rises in Q3/Q4, rural consumption softens</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">RBI constrained further; festive season FMCG targets at risk</div>
         </div>
-
         <div class="cm-chain">
-          <div class="cm-chain-label">Chain C — AI Infrastructure</div>
-          <div class="cm-node root">Meta-Reliance and Google commit billions to AI infra</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">India becomes a top global AI infrastructure destination</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">GCCs add 22,000 jobs in a single month</div>
-          <div class="cm-arrow">↓</div>
-          <div class="cm-node">Tier-2 cities start out-hiring traditional metro hubs</div>
+          <div class="cm-chain-label">Chain C &mdash; Government Monetisation</div>
+          <div class="cm-node root">IRFC OFS &#x20B9;2,300 crore + IDBI divestment advancing</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">Government recycles capital from PSU holdings into fiscal space</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">New capital available for infrastructure and social spending</div>
+          <div class="cm-arrow">&darr;</div>
+          <div class="cm-node">PSU reform credibility strengthens; foreign investor confidence improves</div>
         </div>
       </div>
-
       <div class="cm-merge">
         <div class="cm-merge-line"></div>
-        <div class="cm-merge-arrow">▼ ▼ ▼</div>
+        <div class="cm-merge-arrow">&#9660; &#9660; &#9660;</div>
         <div class="cm-merge-line"></div>
       </div>
-
       <div class="cm-final">
-        All three chains show up in the <b>same Sensex closing number</b>: a 5th straight day of gains, led by financials and infrastructure, dragged by IT — proof that a ceasefire, a Fed statement, and a wave of AI infrastructure spending all land on one trading floor.
+        All three chains converge on a single truth: <b>India is simultaneously validating its digital-AI ambitions (Chain A) while facing a quiet agricultural-climate crisis (Chain B) and steadily executing financial reforms (Chain C).</b> The risk is that the loudness of the AI narrative drowns out the quieter but more broadly felt monsoon and rural income story.
       </div>
-
-      <div class="cm-cross">Cross-link: the same AI infrastructure boom (Chain C) is partly what's driving capital away from traditional IT services stocks (Chain B)</div>
+      <div class="cm-cross">Cross-link: The government&rsquo;s monetisation programme (Chain C) is partially motivated by the need to build fiscal buffers for potential monsoon-related agricultural support spending (Chain B). When government sells assets today, part of that liquidity may fund farmer relief tomorrow.</div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 11: HEATMAP -->
+<!-- S11 HEAT MAP -->
 <section id="s11">
   <div class="wrap">
     <div class="sec-head"><h2>Industry Heat Map</h2></div>
-
     <div class="heat-filterbar">
-      <div class="heat-filter g active" data-filter="g">
-        <span class="swatch"></span>
-        <span class="ftxt"><span class="fn">Growing</span><span class="fc">id: filter-growing</span></span>
-      </div>
-      <div class="heat-filter y active" data-filter="y">
-        <span class="swatch"></span>
-        <span class="ftxt"><span class="fn">Stable</span><span class="fc">id: filter-stable</span></span>
-      </div>
-      <div class="heat-filter r active" data-filter="r">
-        <span class="swatch"></span>
-        <span class="ftxt"><span class="fn">Under Pressure</span><span class="fc">id: filter-pressure</span></span>
-      </div>
+      <div class="heat-filter g active" data-filter="g"><span class="swatch"></span><span class="ftxt"><span class="fn">Growing</span></span></div>
+      <div class="heat-filter y active" data-filter="y"><span class="swatch"></span><span class="ftxt"><span class="fn">Stable</span></span></div>
+      <div class="heat-filter r active" data-filter="r"><span class="swatch"></span><span class="ftxt"><span class="fn">Under Pressure</span></span></div>
     </div>
-
     <div class="heat-grid" id="heatGrid">
-      <div class="heat-card r" data-status="r">
-        <div class="heat-top"><span class="ind">IT Services</span><span class="status">Under Pressure</span></div>
-        <p>Fed's hawkish surprise drags Infosys, TCS, Tech Mahindra, HCL Tech.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>Investors expect costlier capital for US clients, hurting export-heavy IT stocks even as the broader market rallies.
-          <div class="lbl">Watch</div>Whether GCC hiring growth (HR section) starts offsetting services-firm stock weakness in sentiment terms.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">Energy</span><span class="status">Growing</span></div>
-        <p>Oil heads for a sharp weekly decline on ceasefire optimism.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>US-Iran interim ceasefire eases supply fears; Brent set for an 8-10% weekly fall.
-          <div class="lbl">Watch</div>Whether the ceasefire holds and Hormuz insurance costs stay contained.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">Banking / PSU Banks</span><span class="status">Growing</span></div>
-        <p>Among today's biggest gainers as IT drags the index.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>SBI, HDFC Bank, Axis Bank and PSU banks led the Sensex's 5th straight gain.
-          <div class="lbl">Watch</div>Whether DII buying (₹3,517cr on June 18) continues to support banking stocks.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">AI Infrastructure / Data Centres</span><span class="status">Growing</span></div>
-        <p>Hyperscaler investment wave accelerates sharply.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>Meta-Reliance's 168MW Jamnagar facility and Google's $15B Vizag hub both moved into construction this month.
-          <div class="lbl">Watch</div>Power-grid readiness and land acquisition pace across both projects.
-        </div>
-      </div>
-      <div class="heat-card y" data-status="y">
-        <div class="heat-top"><span class="ind">Automobiles</span><span class="status">Stable</span></div>
-        <p>Tata Motors gained today; sector remains mixed overall.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>Tata Motors advanced with the broader rally, though sector sentiment stays cautious on global demand signals.
-          <div class="lbl">Watch</div>Whether falling oil prices translate into stronger consumer demand for vehicles.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">Fintech</span><span class="status">Growing</span></div>
-        <p>Razorpay's confidential IPO filing signals renewed listing confidence.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>A major payments player testing public markets is a strong signal for the broader fintech IPO pipeline.
-          <div class="lbl">Watch</div>Investor reception once Razorpay's filing details become public.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">Retail / E-commerce</span><span class="status">Growing</span></div>
-        <p>Flipkart-Meta affiliate programme deepens social commerce.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>Shoppable social content via Facebook product tags creates a new direct-conversion channel for e-commerce.
-          <div class="lbl">Watch</div>Creator earnings data once the programme has run for a full quarter.
-        </div>
-      </div>
-      <div class="heat-card y" data-status="y">
-        <div class="heat-top"><span class="ind">FMCG</span><span class="status">Stable</span></div>
-        <p>Steady, with no major sector-specific news today.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>Falling oil prices, if sustained, should ease input and logistics costs over coming weeks.
-          <div class="lbl">Watch</div>Whether cost relief gets passed to consumers or retained as margin.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">Healthcare / Babycare</span><span class="status">Growing</span></div>
-        <p>Swara Baby's ₹1,000cr IPO plan reflects sector confidence.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>FirstCry-backed Swara Baby's IPO plans show continued investor appetite in parenting and healthcare-adjacent retail.
-          <div class="lbl">Watch</div>Whether the IPO pricing holds up investor confidence at listing.
-        </div>
-      </div>
-      <div class="heat-card y" data-status="y">
-        <div class="heat-top"><span class="ind">Logistics / Trade</span><span class="status">Stable</span></div>
-        <p>New digital Land Port system aims to speed up clearance.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>The new Land Port Management System could meaningfully cut border-trade processing time once adopted.
-          <div class="lbl">Watch</div>Adoption rates among smaller cross-border traders.
-        </div>
-      </div>
-      <div class="heat-card g" data-status="g">
-        <div class="heat-top"><span class="ind">Proptech</span><span class="status">Growing</span></div>
-        <p>MyGate's ₹225cr raise shows steady capital interest.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>Demand for digitised housing-society management grows alongside India's urban housing expansion.
-          <div class="lbl">Watch</div>Whether MyGate expands into adjacent billing and local-commerce services.
-        </div>
-      </div>
-      <div class="heat-card y" data-status="y">
-        <div class="heat-top"><span class="ind">GCC / Capability Centres</span><span class="status">Stable</span></div>
-        <p>Hiring strong, but concentrated in specific skill tracks.</p>
-        <div class="heat-detail">
-          <div class="lbl">Driver</div>GCCs added 22,000 net roles in May, but mostly in platform engineering, AI/ML, security and data — not broad-based.
-          <div class="lbl">Watch</div>Whether hiring breadth expands beyond these niche skill tracks through the rest of 2026.
-        </div>
-      </div>
+      <div class="heat-card g" data-status="g"><div class="heat-top"><span class="ind">IT / Tech Services</span></div><p>Recovering sharply after Micron blowout validates AI spending.</p><div class="heat-detail"><div class="lbl">Driver</div>Tech Mahindra +3.22%, IT index broadly green on Thursday. Micron&rsquo;s $50B Q4 guidance confirms hyperscaler AI capex is accelerating, not pausing &mdash; which directly supports IT services demand.<div class="lbl">Watch</div>Whether the recovery is sustained or fades as JPMorgan&rsquo;s structural concerns about AI disruption reassert themselves in coming weeks.</div></div>
+      <div class="heat-card r" data-status="r"><div class="heat-top"><span class="ind">Agriculture / Rural</span></div><p>43% monsoon deficit puts kharif crops and rural income at serious risk.</p><div class="heat-detail"><div class="lbl">Driver</div>315 districts at below-normal risk, soybean sowing lagging, food inflation could reach 5.5% if July/August disappoint. The first below-normal IMD forecast in 11 years.<div class="lbl">Watch</div>July 2 as the IMD&rsquo;s next assessment date. If the deficit does not begin recovering by then, the kharif damage becomes locked in.</div></div>
+      <div class="heat-card g" data-status="g"><div class="heat-top"><span class="ind">Banking / Finance</span></div><p>RBI NRI loan mechanism + IDBI divestment both positive signals.</p><div class="heat-detail"><div class="lbl">Driver</div>ICICI Bank, HDFC Bank, Axis Bank and Kotak Bank all gained up to 2.7% after RBI&rsquo;s NRI-FCNR lending announcement. New product category created; deposit inflows incentivised.<div class="lbl">Watch</div>IDBI Bank divestment structure and valuation once announced. That number sets a benchmark for other PSU bank values.</div></div>
+      <div class="heat-card y" data-status="y"><div class="heat-top"><span class="ind">FMCG</span></div><p>Cooling and summer products winning; food inputs under pressure from monsoon.</p><div class="heat-detail"><div class="lbl">Driver</div>Hot dry conditions benefit cooling product categories (ice cream, ACs, cold drinks, sunscreen). But food inflation risk and rural income pressure create a medium-term demand headwind.<div class="lbl">Watch</div>Q2 volume data from FMCG companies in July. Will urban premiumisation offset rural demand softening, or will the rural slowdown dominate?</div></div>
+      <div class="heat-card g" data-status="g"><div class="heat-top"><span class="ind">Defence / Aerospace</span></div><p>UAE BrahMos talks + domestic defence-tech investment momentum.</p><div class="heat-detail"><div class="lbl">Driver</div>UAE BrahMos talks would add another Gulf nation to India&rsquo;s defence export roster. Defence exports crossed ₹21,000 crore in FY26. Strategic + commercial benefits aligning.<div class="lbl">Watch</div>Whether the UAE BrahMos deal progresses to a formal Letter of Intent. Gulf region sales create a template for further Middle East defence partnerships.</div></div>
+      <div class="heat-card r" data-status="r"><div class="heat-top"><span class="ind">Edible Oils / Food</span></div><p>Soybean deficit deepens India&rsquo;s import dependency for vegetable oil.</p><div class="heat-detail"><div class="lbl">Driver</div>Soybean sowing lagging significantly below normal. Domestic shortfall will increase palm oil imports from Indonesia/Malaysia, raising cooking oil prices in Q3/Q4.<div class="lbl">Watch</div>Malaysia and Indonesia palm oil inventory and export price data &mdash; these determine whether India can bridge the domestic soybean gap at manageable cost.</div></div>
+      <div class="heat-card g" data-status="g"><div class="heat-top"><span class="ind">Semiconductors / AI</span></div><p>Micron&rsquo;s blowout and HBM4 ramp validates the entire AI memory thesis.</p><div class="heat-detail"><div class="lbl">Driver</div>$41.46B revenue, 84.6% gross margins, $50B Q4 guidance, $22B in customer prepayments. The AI memory boom is not hype &mdash; it is showing up in record financial results.<div class="lbl">Watch</div>Whether Micron&rsquo;s supply ramp can keep pace with stated demand. CEO said only half to two-thirds of demand can currently be met. Supply side is the binding constraint.</div></div>
+      <div class="heat-card y" data-status="y"><div class="heat-top"><span class="ind">Renewable Energy</span></div><p>Solar EPC contracts continuing; monsoon creates both risk and opportunity.</p><div class="heat-detail"><div class="lbl">Driver</div>Solarium Green Energy ₹186.52 crore Maharashtra solar EPC win shows state-level renewable investment continuing. Weak monsoon creates water scarcity that makes solar + water-efficient manufacturing more attractive.<div class="lbl">Watch</div>Whether India&rsquo;s solar panel manufacturing under PLI scales fast enough to reduce import dependence before the monsoon-driven energy demand spike hits.</div></div>
+      <div class="heat-card r" data-status="r"><div class="heat-top"><span class="ind">Tractors / Two-Wheelers</span></div><p>Rural demand barometers flashing caution as monsoon deficit deepens.</p><div class="heat-detail"><div class="lbl">Driver</div>Tractor demand is directly correlated with farm income expectations. A 43% monsoon deficit in June &mdash; the peak sowing month &mdash; typically shows up in tractor and two-wheeler volumes 2-3 months later.<div class="lbl">Watch</div>June and July monthly retail data from Mahindra, Hero MotoCorp and Bajaj Auto. These will be the first hard demand confirmation or denial of the monsoon deficit&rsquo;s consumer impact.</div></div>
+      <div class="heat-card g" data-status="g"><div class="heat-top"><span class="ind">AI Startups</span></div><p>Maya Research, TrueFan, AutoVRse all raising fresh rounds with diverse use cases.</p><div class="heat-detail"><div class="lbl">Driver</div>Voice-first AI, industrial AI and enterprise video generation all raising in the same week signals that Indian AI investment has diversified beyond generic LLM wrappers to specific vertical applications.<div class="lbl">Watch</div>Whether these funded startups can convert early product traction into paying enterprise contracts within 12 months. Pilot-to-production is the critical test for Indian enterprise AI.</div></div>
+      <div class="heat-card y" data-status="y"><div class="heat-top"><span class="ind">Fintech / Open Finance</span></div><p>AA SRO recognition and Zopper ZENOVA signal infrastructure maturing.</p><div class="heat-detail"><div class="lbl">Driver</div>Sahamati&rsquo;s SRO recognition gives the Account Aggregator ecosystem formal regulatory governance. Zopper ZENOVA deploys agentic AI on this infrastructure. The plumbing is being built for India&rsquo;s open finance future.<div class="lbl">Watch</div>AA adoption rates across regulated entities. The ecosystem only delivers value when enough banks, insurers and FIUs are live on the network for users to actually share data seamlessly.</div></div>
+      <div class="heat-card y" data-status="y"><div class="heat-top"><span class="ind">PSU / Government Holdings</span></div><p>IRFC OFS and IDBI divestment both advancing. Reform credibility building.</p><div class="heat-detail"><div class="lbl">Driver</div>Government divestment of IRFC (2% stake, ₹2,300 crore) and IDBI Bank (30.48%) simultaneously signals that the FY27 divestment programme is being executed, not deferred again.<div class="lbl">Watch</div>IRFC OFS Day 1 institutional subscription rate. Oversubscription signals strong market appetite for government-backed infrastructure paper at the current discount.</div></div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 12: TAKEAWAYS -->
+<!-- S12 TAKEAWAYS -->
 <section id="s12">
   <div class="wrap">
-    <div class="sec-head"><h2>Manager's Takeaways</h2></div>
-
-    <div class="insight">
-      <div class="num">Insight 01</div>
-      <h4>🧠 "The market is up" doesn't mean everything is up</h4>
-      <div class="insight-grid">
-        <div class="ig"><span>What happened</span>Sensex hit a 5-day winning streak while IT stocks specifically fell.</div>
-        <div class="ig"><span>Business lesson</span>Index-level numbers can mask sharply divergent sector-level stories happening underneath.</div>
-        <div class="ig"><span>Manager takeaway</span>Always check sector breakdowns before drawing conclusions from a single market headline.</div>
-        <div class="ig"><span>Consumer implication</span>Your portfolio's actual performance depends entirely on which sectors it holds, not the headline index move.</div>
+    <div class="sec-head"><h2>Manager&#39;s Takeaways</h2></div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-tag dt-violet">Insight 01</div>
+        <h4>&#129504; When a company beats Wall Street by 23.8%, the market was pricing in uncertainty, not reality. That gap is where money is made.</h4>
+        <ul>
+          <li><b>Business lesson:</b> Consensus estimates are the average of what analysts expect, not what is actually going to happen. When a company&rsquo;s actual performance deviates wildly from consensus &mdash; either above or below &mdash; it means the market was wrong about something important. The person who correctly identifies &ldquo;where consensus is wrong and why&rdquo; before the results arrive is the one who profits. This is the entire craft of contrarian investing.</li>
+          <li><b>Manager takeaway:</b> In business strategy, always ask: what is the consensus view about our market, and where do we specifically disagree with it? If your company&rsquo;s internal view is identical to the market consensus, you have no edge. If you have a specific, defensible insight that differs from consensus, that is where your competitive advantage lives.</li>
+          <li><b>Real world check:</b> Micron&rsquo;s 23.8% EPS beat came from pricing power and supply scarcity that the market consistently underestimates. Any business operating in a supply-constrained environment consistently surprises consensus forecasts. Supply constraints are hard to model from the outside but obvious to the person inside.</li>
+        </ul>
+        <div class="src"></div>
       </div>
-    </div>
-
-    <div class="insight">
-      <div class="num">Insight 02</div>
-      <h4>🧠 Two opposite global signals can land on the same day</h4>
-      <div class="insight-grid">
-        <div class="ig"><span>What happened</span>A ceasefire calmed oil markets the same day the Fed signalled higher rates.</div>
-        <div class="ig"><span>Business lesson</span>Global events rarely arrive one at a time — managers need to track multiple simultaneous signals, not just the loudest one.</div>
-        <div class="ig"><span>Manager takeaway</span>Build scenario plans that account for conflicting signals landing together, not sequentially.</div>
-        <div class="ig"><span>Consumer implication</span>Don't assume a "good news day" for markets means good news for every sector you care about.</div>
+      <div class="data-card">
+        <div class="data-tag dt-violet">Insight 02</div>
+        <h4>&#129504; A monsoon deficit is not visible in the Sensex today. It shows up in corporate earnings exactly two to three quarters from now.</h4>
+        <ul>
+          <li><b>Business lesson:</b> The most dangerous risks in business are the ones that develop slowly and only become visible when it is too late to act. A monsoon deficit in June creates food price pressure in September, rural income decline in October-November, and FMCG/rural-durable demand softening in the December quarter. The damage accumulates quietly while the market focuses on immediate catalysts like tech earnings.</li>
+          <li><b>Manager takeaway:</b> Build a &ldquo;slow variable&rdquo; tracker for your business &mdash; things that change slowly but have large eventual impact: monsoon patterns for rural-exposed businesses, US rate cycles for export businesses, Chinese manufacturing capacity for import-dependent businesses. These slow variables predict fast shocks better than any news headline.</li>
+          <li><b>Real world check:</b> The 2023 monsoon deficit pushed food inflation to 11.5% four months after the rains failed. In 2026, India is tracking a similar trajectory. The managers who built price-escalation clauses into their Q4 contracts in August 2023 were better prepared than those who reacted to October&rsquo;s inflation shock.</li>
+        </ul>
+        <div class="src"></div>
       </div>
-    </div>
-
-    <div class="insight">
-      <div class="num">Insight 03</div>
-      <h4>🧠 Jobs aren't disappearing — they're relocating</h4>
-      <div class="insight-grid">
-        <div class="ig"><span>What happened</span>GCCs added 22,000 roles in May even as IT services firms cut headcount.</div>
-        <div class="ig"><span>Business lesson</span>"Layoffs" headlines often hide a parallel hiring story happening in a different part of the same industry.</div>
-        <div class="ig"><span>Manager takeaway</span>Track where hiring is moving to, not just where it's shrinking, before making career or business decisions.</div>
-        <div class="ig"><span>Consumer implication</span>The "IT slowdown" narrative is more nuanced than headlines suggest — overall industry employment actually grew in 2026.</div>
+      <div class="data-card">
+        <div class="data-tag dt-violet">Insight 03</div>
+        <h4>&#129504; When an investment bank downgrades your sector and your sector&rsquo;s leader praises it on the same day, look at the time horizon each is measuring.</h4>
+        <ul>
+          <li><b>Business lesson:</b> JPMorgan and Nandan Nilekani are not contradicting each other &mdash; they are measuring different things. JPMorgan is looking at 6-12 month demand signals. Nilekani is looking at a 4-5 year strategic positioning story. Both can be true. Short-term pressure and long-term opportunity coexist in every sector undergoing transformation. The confusion arises when people treat a 12-month view and a 5-year view as if they are answering the same question.</li>
+          <li><b>Manager takeaway:</b> Always clarify the time horizon before accepting or rejecting any strategic analysis. A business strategy built for the next 3 years is useless if evaluated against next quarter&rsquo;s metrics. A quarterly operational plan is wrong if it ignores a 3-year structural trend. Mismatched time horizons are one of the most common causes of bad strategic decisions in organisations.</li>
+          <li><b>Real world check:</b> In 2012-13, every analyst said mobile payments had no future in India &mdash; looking at current adoption metrics. Nilekani was simultaneously building Aadhaar, which eventually became the backbone of UPI. Short-term metrics and long-term infrastructure narratives require completely different analytical frameworks.</li>
+        </ul>
+        <div class="src"></div>
       </div>
-    </div>
-
-    <div class="insight">
-      <div class="num">Insight 04</div>
-      <h4>🧠 Infrastructure bets are a vote of confidence money can't fake</h4>
-      <div class="insight-grid">
-        <div class="ig"><span>What happened</span>Meta-Reliance and Google together committed well over $15 billion to AI infrastructure in India this month.</div>
-        <div class="ig"><span>Business lesson</span>Multi-year infrastructure commitments are harder to reverse than marketing spend — they signal genuine long-term conviction.</div>
-        <div class="ig"><span>Manager takeaway</span>Watch capital expenditure announcements, not press statements, to gauge how seriously a company believes in a market.</div>
-        <div class="ig"><span>Consumer implication</span>This AI infrastructure wave will likely mean faster, more capable AI products available in India over the next 2-3 years.</div>
+      <div class="data-card">
+        <div class="data-tag dt-violet">Insight 04</div>
+        <h4>&#129504; A buyback says &ldquo;the stock is cheap.&rdquo; An OFS says &ldquo;the stock is fair value or better.&rdquo; Both happen on the same day. Read both signals.</h4>
+        <ul>
+          <li><b>Business lesson:</b> Share buybacks and Offer for Sales (OFS) are opposite signals from people with the most information about a company&rsquo;s value. When a company buybacks its own shares, management is saying: &ldquo;at this price, our stock is a better investment than anything else we could do with cash.&rdquo; When an OFS happens, the selling party (promoter or government) is saying: &ldquo;at this price, selling is better than holding.&rdquo; Reading both simultaneously gives you a richer map of where different informed parties think different stocks are valued.</li>
+          <li><b>Manager takeaway:</b> Insider buying (or company buybacks) is bullish. Insider selling (or OFS) is not necessarily bearish &mdash; it often reflects liquidity needs or portfolio management, not view on the underlying business. The context of why the insider is selling matters as much as the fact that they are selling.</li>
+          <li><b>Real world check:</b> The government selling IRFC shares at a 7.79% discount is not a statement that IRFC is a bad business. It is a statement that the government needs the capital and is willing to offer a discount to attract buyers. Understanding the seller&rsquo;s motivation is the most important step in evaluating any market transaction.</li>
+        </ul>
+        <div class="src"></div>
       </div>
-    </div>
-
-    <div class="insight">
-      <div class="num">Insight 05</div>
-      <h4>🧠 Content and commerce are becoming the same thing</h4>
-      <div class="insight-grid">
-        <div class="ig"><span>What happened</span>Flipkart and Meta launched an affiliate programme letting creators earn directly from shoppable posts.</div>
-        <div class="ig"><span>Business lesson</span>The line between "discovery" and "purchase" is disappearing — platforms are designing for single-step conversion.</div>
-        <div class="ig"><span>Manager takeaway</span>Marketing and e-commerce teams increasingly need to plan campaigns together, not as separate functions.</div>
-        <div class="ig"><span>Consumer implication</span>Expect more of your social feed to come with built-in "buy now" options going forward.</div>
+      <div class="data-card">
+        <div class="data-tag dt-violet">Insight 05</div>
+        <h4>&#129504; Climate events are business events. A monsoon forecast is not a weather report &mdash; it is an early earnings warning for an entire sector of the economy.</h4>
+        <ul>
+          <li><b>Business lesson:</b> The 2026 monsoon deficit will affect corporate earnings in FMCG, auto, rural banking and agri-input sectors before any analyst issues a downgrade or any management team updates guidance. The IMD data is publicly available, the transmission mechanism is well-documented, and the lag time is predictable. Yet most investors and managers treat it as &ldquo;weather news&rdquo; rather than &ldquo;financial intelligence.&rdquo;</li>
+          <li><b>Manager takeaway:</b> Build a systematic process to translate climate signals into business signals. For a rural FMCG brand: monsoon deficit &rarr; rural income falls &rarr; discretionary spending compressed &rarr; volume guidance needs revision. For a bank with agricultural loan exposure: monsoon deficit &rarr; crop yield down &rarr; farmer income down &rarr; agricultural NPA risk rises. The chain is predictable. The execution is the differentiator.</li>
+          <li><b>Real world check:</b> Companies like ITC, Mahindra and HUL have entire internal teams dedicated to monitoring monsoon data and translating it into demand forecasts, procurement adjustments and inventory plans. This is not peripheral analysis for them &mdash; it is core business intelligence that shapes quarterly strategy.</li>
+        </ul>
+        <div class="src"></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 13: QUOTE -->
 <section>
   <div class="wrap">
     <div class="sec-head"><h2>Quote of the Day</h2></div>
     <div class="quote-card">
-      <blockquote>"In the world of business, the people who are most successful are those who are doing what they love."</blockquote>
-      <cite>— Warren Buffett, Chairman & CEO, Berkshire Hathaway</cite>
+      <blockquote>&ldquo;Markets are constantly in a state of uncertainty and flux, and money is made by discounting the obvious and betting on the unexpected.&rdquo;</blockquote>
+      <cite>&mdash; George Soros, Investor &amp; Founder, Open Society Foundations</cite>
     </div>
   </div>
 </section>
 
 <footer>
-  MBA India Daily Intelligence · Built for future managers · Sources: Business Standard, Trading Economics, HDFC Sky, Trendlyne, Inc42, Newskart, OwnYourCareer, TechCrunch, Storyboard18, Liquide Research, LatestLY, Nasscom, RIL Investor Relations · 20 June 2026
+  MBA India Daily Intelligence &middot; Built For Future Managers &middot; Sources: 24/7 Wall St., Investing.com, StockTitan, TheNextWeb, Outlook India, Outlook Business, Business Today, Trading Economics, Upstox, HDFCSky, Policy Circle, Kotak Neo Insights, Wright Research, IMD, Business Standard, Dailyhunt/YourStory, Micron IR, DIPAM &middot; 25 June 2026
 </footer>
 
 <script>
 (function(){
-  const filters = document.querySelectorAll('.heat-filter');
-  const cards = document.querySelectorAll('.heat-card');
-  let activeStatuses = new Set(['g','y','r']);
-
-  function applyFilter(){
-    cards.forEach(c=>{
-      const s = c.getAttribute('data-status');
-      c.classList.toggle('hidden', !activeStatuses.has(s));
-    });
-    filters.forEach(f=>{
-      const s = f.getAttribute('data-filter');
-      f.classList.toggle('active', activeStatuses.has(s));
-    });
+  const filters=document.querySelectorAll('.heat-filter');
+  const cards=document.querySelectorAll('.heat-card');
+  let a=new Set(['g','y','r']);
+  function go(){
+    cards.forEach(c=>{c.classList.toggle('hidden',!a.has(c.getAttribute('data-status')));});
+    filters.forEach(f=>{f.classList.toggle('active',a.has(f.getAttribute('data-filter')));});
   }
-
   filters.forEach(f=>{
-    f.addEventListener('click', ()=>{
-      const s = f.getAttribute('data-filter');
-      if(activeStatuses.size===1 && activeStatuses.has(s)){
-        activeStatuses = new Set(['g','y','r']);
-      } else {
-        activeStatuses = new Set([s]);
-      }
-      applyFilter();
+    f.addEventListener('click',()=>{
+      const s=f.getAttribute('data-filter');
+      a=a.size===1&&a.has(s)?new Set(['g','y','r']):new Set([s]);
+      go();
     });
   });
-
-  cards.forEach(c=>{
-    c.addEventListener('click', ()=>{
-      c.classList.toggle('open');
-    });
-  });
+  cards.forEach(c=>{c.addEventListener('click',()=>c.classList.toggle('open'));});
 })();
 </script>
-
 </body>
 </html>
